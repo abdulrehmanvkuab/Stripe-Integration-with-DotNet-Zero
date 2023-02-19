@@ -1,0 +1,75 @@
+
+.btn--base,.hero__subtitle::before,.hero__subtitle::after,.video-btn .icon::before, .video-btn .icon::after,.video-btn .icon,.video-btn .icon::before, .video-btn .icon::after,.about-thumb .about-img-content,.service-card::after,.section-subtitle.border-left::before,.testimonial-slide-area .content-slider .slick-arrow,.blog-card .post-time,.cta-wrapper,.footer-widget__title::before,.bg--base,.form-check-input:checked,.d-widget.curve--shape::before,.quick-link-card .icon::before,.header .main-menu li .sub-menu li a::before,.pagination .page-item.active .page-link,.pagination .page-item .page-link:hover,.sidebar-menu__header::before{
+    background-color: #7966ff !important
+}
+
+
+.service-card__icon,.header .main-menu li a:hover, .header .main-menu li a:focus,.text--base,.footer-link-list li a:hover,.blog-title a:hover,.s-post__title a:hover,.page-breadcrumb li:first-child::before,.account-form .form-group a,.font-size--14px a,.user-account-check .form-check-input:checked ~ label i,.quick-link-card .icon,.quick-link-card:hover,.fw-bold,.inline-menu-list li a:hover,.header .main-menu li.menu_has_children:hover > a::before,.trans-serach-open-btn,.custom-select-search-box .search-box-btn,.sidebar-menu__item.active .sidebar-menu__link,.sidebar-menu__link:hover,.header-user-menu li a:hover{
+    color: #7966ff !important
+}
+
+.header-user-menu li a:hover{
+    background-color: #7966ff0d !important
+}
+
+.pagination .page-item .page-link:hove,.sidebar-menu__item.active .sidebar-menu__link{
+    border-color:#7966ff !important
+}
+
+.sidebar-menu__item.active .sidebar-menu__link{
+    border-color:#7966ff !important
+}
+
+.d-widget{
+    border-left: 4px solid #7966ff !important
+}
+
+.user-account-check .form-check-input:checked ~ label,.form-check-input:checked{
+    border-color: #7966ff !important
+}
+
+.footer-contact-card .icon{
+    background-color: #7966ff8c !important
+}
+.footer-contact-card .icon::after{
+    background-color: #7966ff40 !important
+}
+
+.service-card{
+    border: 2px solid #7966ff73 !important
+}
+
+.service-card:hover{
+    box-shadow: 0 5px 15px 1px #7966ff40 !important
+}
+
+.quick-link-card:hover .icon {
+    color: #fff !important;
+    border-color: #7966ff;
+}
+
+.accordion-button:not(.collapsed){
+
+    background-color:#7966ff1A !important
+}
+
+.caption-list-two{
+
+    background-color:#7966ff1A !important
+}
+
+.accordion-button:focus{
+    border-color: #7966ff1A !important
+}
+
+.main-menu li.active > a{
+    color: #7966ff;
+}
+
+.preloader .animated-preloader, .preloader .animated-preloader::before{
+    background: #7966ff;
+}
+
+.subscription-form{
+    border: 3px solid #7966ff;
+}
