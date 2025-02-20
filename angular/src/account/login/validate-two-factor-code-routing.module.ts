@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ValidateTwoFactorCodeComponent } from './validate-two-factor-code.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: ValidateTwoFactorCodeComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class ValidateTwoFactorCodeRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a77624dd04badcf21c61b85c304942e97004a54d5bed1880654bfeb681b09d5
+size 465

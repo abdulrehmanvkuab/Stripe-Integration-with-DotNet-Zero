@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-import { RegisterTenantResultRoutingModule } from './register-tenant-result-routing.module';
-import { RegisterTenantResultComponent } from './register-tenant-result.component';
-
-@NgModule({
-    imports: [AppSharedModule, AccountSharedModule, RegisterTenantResultRoutingModule],
-    declarations: [RegisterTenantResultComponent],
-})
-export class RegisterTenantResultModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e11d2b0d2807cc839e0d8c5d8895dc83568cfb7ae22c251056030001f51428e7
+size 559

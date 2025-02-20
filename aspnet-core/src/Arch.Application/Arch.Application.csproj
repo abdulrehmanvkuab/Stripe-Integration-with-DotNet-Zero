@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Arch.Application</AssemblyName>
+    <PackageId>Arch.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>Arch</RootNamespace>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore.EFPlus" Version="9.1.1" />
+    <PackageReference Include="MiniExcel" Version="1.31.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Arch.Application.Shared\Arch.Application.Shared.csproj" />
+    <ProjectReference Include="..\Arch.Core\Arch.Core.csproj" />
+    <ProjectReference Include="..\Arch.EntityFrameworkCore\Arch.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+  <Compile Remove="Activities\ActivityAttachments\**" />
+  <Compile Remove="delete\**" />
+  <Compile Remove="Enum\**" />
+  <Compile Remove="ExpenseReibursementDetailMaster\**" />
+  <Compile Remove="Gamification\**" />
+  <Compile Remove="SignatureFiles\**" />
+  <EmbeddedResource Remove="Activities\ActivityAttachments\**" />
+  <EmbeddedResource Remove="delete\**" />
+  <EmbeddedResource Remove="Enum\**" />
+  <EmbeddedResource Remove="ExpenseReibursementDetailMaster\**" />
+  <EmbeddedResource Remove="Gamification\**" />
+  <EmbeddedResource Remove="SignatureFiles\**" />
+  <None Remove="Activities\ActivityAttachments\**" />
+  <None Remove="delete\**" />
+  <None Remove="Enum\**" />
+  <None Remove="ExpenseReibursementDetailMaster\**" />
+  <None Remove="Gamification\**" />
+  <None Remove="SignatureFiles\**" />
+  </ItemGroup>
+  <ItemGroup>
+
+    <PackageReference Include="Grpc.Core" Version="2.46.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+
+
+    <PackageReference Include="NuGet.Packaging" Version="6.9.1" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.2" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.2" />
+  </ItemGroup>
+</Project>

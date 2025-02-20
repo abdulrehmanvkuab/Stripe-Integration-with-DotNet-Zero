@@ -1,24 +1,3 @@
-import { Injector, Component, OnInit } from '@angular/core';
-import { appModuleAnimation } from '@shared/animations/routerTransition';
-import { ThemesLayoutBaseComponent } from '@app/shared/layout/themes/themes-layout-base.component';
-import { UrlHelper } from '@shared/helpers/UrlHelper';
-import { AppConsts } from '@shared/AppConsts';
-import { DateTimeService } from '@app/shared/common/timing/date-time.service';
-
-@Component({
-    templateUrl: './theme13-layout.component.html',
-    selector: 'theme13-layout',
-    animations: [appModuleAnimation()],
-})
-export class Theme13LayoutComponent extends ThemesLayoutBaseComponent implements OnInit {
-
-    remoteServiceBaseUrl: string = AppConsts.remoteServiceBaseUrl;
-
-    constructor(injector: Injector, _dateTimeService: DateTimeService) {
-        super(injector, _dateTimeService);
-    }
-
-    ngOnInit() {
-        this.installationMode = UrlHelper.isInstallUrl(location.href);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:03658c949e01dcca21664801288953cf6cd89bd5b39fb8f512504a5a119643f5
+size 935

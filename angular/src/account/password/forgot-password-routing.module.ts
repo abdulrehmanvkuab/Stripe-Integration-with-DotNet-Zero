@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ForgotPasswordComponent } from './forgot-password.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: ForgotPasswordComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class ForgotPasswordRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6e8bdd185a356a25593ec386dbbe4907d0e8f314aac95eba5b5f7f95dad2d20
+size 435

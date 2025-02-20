@@ -1,22 +1,3 @@
-import { Injector, Component, ViewEncapsulation, Inject, Input } from '@angular/core';
-
-import { AppConsts } from '@shared/AppConsts';
-import { AppComponentBase } from '@shared/common/app-component-base';
-
-import { DOCUMENT } from '@angular/common';
-
-@Component({
-    templateUrl: './theme4-brand.component.html',
-    selector: 'theme4-brand',
-    encapsulation: ViewEncapsulation.None,
-})
-export class Theme4BrandComponent extends AppComponentBase {
-    @Input() skin = 'dark';
-    @Input() customStyle = 'h-55px';
-
-    remoteServiceBaseUrl: string = AppConsts.remoteServiceBaseUrl;
-
-    constructor(injector: Injector, @Inject(DOCUMENT) private document: Document) {
-        super(injector);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bd3c0506c8cd8c84acc685204fc991addb5f978597bff03e7ec6860a68ebb786
+size 702

@@ -1,30 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
-@NgModule({
-    imports: [
-        RouterModule.forChild([
-            {
-                path: '',
-                children: [
-                    {
-                        path: 'dashboard',
-                        loadChildren: () => import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
-                        data: { permission: 'Pages.Tenant.Dashboard' },
-                    },
-                    {
-                        path: 'phonebook',
-                        loadChildren: () => import('./phonebook/phonebook.module').then(m => m.PhoneBookModule)
-                    }
-                    ,
-                    
-                    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-                    { path: '**', redirectTo: 'dashboard' },
-
-                ],
-            },
-        ]),
-    ],
-    exports: [RouterModule],
-})
-export class MainRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4e5391bd279b4e94a690e549f6e07782067c9388bbc9b55f0258f3b4ffe12297
+size 994

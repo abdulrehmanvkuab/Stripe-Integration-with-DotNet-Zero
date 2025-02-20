@@ -1,19 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { EditionsRoutingModule } from './editions-routing.module';
-import { EditionsComponent } from './editions.component';
-import { EditEditionModalComponent } from './edit-edition-modal.component';
-import { CreateEditionModalComponent } from './create-edition-modal.component';
-import { MoveTenantsToAnotherEditionModalComponent } from './move-tenants-to-another-edition-modal.component';
-
-@NgModule({
-    declarations: [
-        EditionsComponent,
-        EditEditionModalComponent,
-        CreateEditionModalComponent,
-        MoveTenantsToAnotherEditionModalComponent,
-    ],
-    imports: [AppSharedModule, AdminSharedModule, EditionsRoutingModule],
-})
-export class EditionsModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d95f09a9cd28e214005693f2fea507d75250c3862019e92223169af57528c138
+size 872

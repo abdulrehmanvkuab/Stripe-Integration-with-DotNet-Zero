@@ -1,19 +1,3 @@
-import { Component, Injector, OnInit } from '@angular/core';
-import { appModuleAnimation } from '@shared/animations/routerTransition';
-import { AppComponentBase } from '@shared/common/app-component-base';
-
-@Component({
-    templateUrl: './demo-ui-components.component.html',
-    animations: [appModuleAnimation()],
-})
-export class DemoUiComponentsComponent extends AppComponentBase {
-    alertVisible = true;
-
-    constructor(injector: Injector) {
-        super(injector);
-    }
-
-    hideAlert(): void{
-        this.alertVisible = false;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e37bcd201890d6bcc173ebf7abe6ec2e842317f6b3274a628d92e1db2fdd40a7
+size 546

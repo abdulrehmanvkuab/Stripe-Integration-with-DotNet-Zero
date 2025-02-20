@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { BuySucceedComponent } from './buy-succeed.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: BuySucceedComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class BuySucceedRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1a5a733092d9200be7d588cf24f7a90ede29d089475cf4415fd0b42f5f1f222
+size 419

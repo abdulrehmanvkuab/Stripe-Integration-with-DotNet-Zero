@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { BuySucceedRoutingModule } from './buy-succeed-routing.module';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-import { BuySucceedComponent } from './buy-succeed.component';
-
-@NgModule({
-    declarations: [BuySucceedComponent],
-    imports: [AppSharedModule, AccountSharedModule, BuySucceedRoutingModule],
-})
-export class BuySucceedModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:25f4d7b1f6baf74efac9ad41e5c04328c1e41f661403436415215f3640ac66b7
+size 487

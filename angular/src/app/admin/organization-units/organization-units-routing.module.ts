@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { OrganizationUnitsComponent } from '@app/admin/organization-units/organization-units.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: OrganizationUnitsComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class OrganizationUnitsRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8387cfdd96e134ce58623abe320ec75f612dd5b6b30c86ee94f1977533dc4a85
+size 475

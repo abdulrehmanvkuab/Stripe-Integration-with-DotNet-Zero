@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { StripeCancelPaymentRoutingModule } from './stripe-cancel-payment-routing.module';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-import { StripeCancelPaymentComponent } from './stripe-cancel-payment.component';
-
-@NgModule({
-    declarations: [StripeCancelPaymentComponent],
-    imports: [AppSharedModule, AccountSharedModule, StripeCancelPaymentRoutingModule],
-})
-export class StripeCancelPaymentModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:730148a8a4f95565c8d77ea31fed989c7ba9d157ae7281cf6b74944a5c817e1a
+size 552

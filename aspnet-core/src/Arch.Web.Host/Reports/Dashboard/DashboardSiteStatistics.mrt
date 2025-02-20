@@ -1,0 +1,435 @@
+{
+  "ReportVersion": "2023.2.2.0",
+  "ReportGuid": "a59900769eba4fa9bed4f0fcf782f28d",
+  "ReportName": "DashboardSiteStatistics",
+  "ReportAlias": "DashboardSiteStatistics",
+  "ReportCreated": "/Date(1531223785358+0100)/",
+  "ReportChanged": "/Date(1685549946144+0100)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "ReportUnit": "Inches",
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class DashboardSiteStatistics : Stimulsoft.Report.StiReport\r\n    {\r\n        public DashboardSiteStatistics()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
+  "Dictionary": {
+    "DataSources": {
+      "0": {
+        "Ident": "StiSqlSource",
+        "Name": "Visitors",
+        "Alias": "Visitors",
+        "Key": "5a961a85bc55450f8b27f922a7a3d736",
+        "Columns": {
+          "0": {
+            "Name": "Date",
+            "Index": -1,
+            "NameInSource": "Date",
+            "Alias": "Date",
+            "Type": "System.DateTime"
+          },
+          "1": {
+            "Name": "DateID",
+            "Index": -1,
+            "NameInSource": "DateID",
+            "Alias": "DateID",
+            "Type": "System.Int64"
+          },
+          "2": {
+            "Name": "Passers",
+            "Index": -1,
+            "NameInSource": "Passers",
+            "Alias": "Passers",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Visitors",
+            "Index": -1,
+            "NameInSource": "Visitors",
+            "Alias": "Visitors",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "lilac",
+        "SqlCommand": "select * from Visitors"
+      },
+      "1": {
+        "Ident": "StiSqlSource",
+        "Name": "dwellers",
+        "Alias": "dwellers",
+        "Key": "72ce15e481ae4ff29dc04444b0c849c5",
+        "Columns": {
+          "0": {
+            "Name": "1 Repeat",
+            "Index": -1,
+            "NameInSource": "1 Repeat",
+            "Alias": "1 Repeat",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "2 Repeats",
+            "Index": -1,
+            "NameInSource": "2 Repeats",
+            "Alias": "2 Repeats",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "3 Repeats",
+            "Index": -1,
+            "NameInSource": "3 Repeats",
+            "Alias": "3 Repeats",
+            "Type": "System.Decimal"
+          },
+          "3": {
+            "Name": "Average Time",
+            "Index": -1,
+            "NameInSource": "Average Time",
+            "Alias": "Average Time",
+            "Type": "System.Decimal"
+          },
+          "4": {
+            "Name": "Date",
+            "Index": -1,
+            "NameInSource": "Date",
+            "Alias": "Date",
+            "Type": "System.DateTime"
+          },
+          "5": {
+            "Name": "DateID",
+            "Index": -1,
+            "NameInSource": "DateID",
+            "Alias": "DateID",
+            "Type": "System.Int64"
+          },
+          "6": {
+            "Name": "New",
+            "Index": -1,
+            "NameInSource": "New",
+            "Alias": "New",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "lilac",
+        "SqlCommand": "select * from dwellers"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiSqlDatabase",
+        "Name": "lilac",
+        "Alias": "lilac",
+        "ConnectionStringEncrypted": "4/LBKMZN82BvXPGYagSsC9V0++tIbMqk4lyhWGMI4BeNbM8oT03zWWtYQJBiAORG1XDfCcZQS8HhTf3YanBiZ41UzYhGTHqkaXT9+GIEaWONVPfCRV2rNWpLiaVhGCJvxHRp605MMYFrSdk06kngY8ZAkWjvS/PNak05yedcpA=="
+      }
+    },
+    "Relations": {
+      "0": {
+        "Name": "days",
+        "ChildColumns": {
+          "0": "DateID"
+        },
+        "ParentColumns": {
+          "0": "DateID"
+        },
+        "NameInSource": "day",
+        "Alias": "days",
+        "Key": "bcac95371e454305a7ec8a587a34d4fa",
+        "ParentSource": "Visitors",
+        "ChildSource": "dwellers"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiDashboard",
+      "Name": "Dashboard1",
+      "Guid": "8160e76fc0c84f18a7c3e35f6413334d",
+      "Alias": "Site Statistics",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiTextElement",
+          "Name": "Text1",
+          "Guid": "3d9d8a197d634129b476daf72f5feab5",
+          "ClientRectangle": "0,0,1200,40",
+          "Margin": {
+            "Left": 0.0,
+            "Top": 0.0,
+            "Right": 0.0,
+            "Bottom": 0.0
+          },
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Text": "<font face=\"Arial\" size=\"36\"><text-align=\"Left\"><font-color=\"#DDDDDD\">Count & Conversion</font-color></text-align></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          }
+        },
+        "1": {
+          "Ident": "StiChartElement",
+          "Name": "Chart2",
+          "Guid": "1fa50c3a2cee4d4ebe96479586b86266",
+          "ClientRectangle": "600,200,600,400",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "TransformSorts": {
+            "0": {
+              "Key": "Users",
+              "Direction": "Descending"
+            }
+          },
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "9ca4b8aff2844a6088b73b3fc293813f",
+              "Expression": "Sum([dwellers.1Repeat])",
+              "Label": "1 Repeat",
+              "SeriesType": "FunnelWeightedSlices"
+            },
+            "1": {
+              "Ident": "ValueChartMeter",
+              "Key": "feac4c8c5474484aa3fa6fd73e456885",
+              "Expression": "Count(dwellers.New)",
+              "Label": "New",
+              "SeriesType": "FunnelWeightedSlices"
+            },
+            "2": {
+              "Ident": "ValueChartMeter",
+              "Key": "78159bc22e9543ec97406defc670fca8",
+              "Expression": "Sum([dwellers.3Repeats])",
+              "Label": "3 Repeats",
+              "SeriesType": "FunnelWeightedSlices"
+            },
+            "3": {
+              "Ident": "ValueChartMeter",
+              "Key": "9ca66e9ef3d5475cb0f06956717c5f78",
+              "Expression": "Sum([dwellers.2Repeats])",
+              "Label": "2 Repeats",
+              "SeriesType": "FunnelWeightedSlices"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "059498fe6aff41f8851585d6dea5b030",
+              "Expression": "Visitors.Date",
+              "Label": "Date"
+            }
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab",
+            "ViewsState": "OnHover"
+          },
+          "Title": {
+            "Text": "Dwell",
+            "Font": ";15.75;;"
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "9652c03b062440c196b6ba6f65285397"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 0,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits"
+          },
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 0,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits"
+          },
+          "Area": {
+            "SideBySide": true,
+            "GridLinesHor": {
+              "Visible": true
+            },
+            "Indicator": {
+              "Value": {
+                "Color": "Transparent"
+              },
+              "Title": {
+                "Color": "Transparent"
+              }
+            }
+          },
+          "Labels": {
+            "Position": "Center"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "2": {
+          "Ident": "StiChartElement",
+          "Name": "Chart3",
+          "Guid": "435fd5d5406c421fb2a025c5107c7b88",
+          "ClientRectangle": "0,200,600,400",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Values": {
+            "0": {
+              "Ident": "ValueChartMeter",
+              "Key": "d27e8d1693b74d988522e0ec328e4430",
+              "Expression": "Sum(dwellers.AverageTime)",
+              "Label": "Average Time",
+              "SeriesType": "Pie"
+            }
+          },
+          "Arguments": {
+            "0": {
+              "Ident": "ArgumentChartMeter",
+              "Key": "c0e1a386429c4efb9d2b97010d36ab9c",
+              "Expression": "dwellers.Date",
+              "Label": "Date"
+            }
+          },
+          "DashboardInteraction": {
+            "Ident": "Chart",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab",
+            "ViewsState": "OnHover"
+          },
+          "Title": {
+            "Text": "Repeats",
+            "Font": ";15.75;;"
+          },
+          "ManuallyEnteredChartMeter": {
+            "Ident": "ValueChartMeter",
+            "Key": "2c100a7a20c14dbb8b1d9b86ccec8a15"
+          },
+          "ArgumentFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 0,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits"
+          },
+          "ValueFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "Area": {
+            "SideBySide": true,
+            "GridLinesHor": {
+              "Visible": true
+            },
+            "Indicator": {
+              "Value": {
+                "Color": "Transparent"
+              },
+              "Title": {
+                "Color": "Transparent"
+              }
+            }
+          },
+          "Labels": {
+            "Position": "Center"
+          },
+          "Options3D": {
+            "Lighting": "Gradient"
+          },
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "3": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator1",
+          "Guid": "f09215d6de794d859971fc12a960694c",
+          "ClientRectangle": "0,40,600,160",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 3,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "1c9d6fcad69a4fe7a5048d99c26562e0",
+            "Expression": "Sum(Visitors.Passers)",
+            "Label": "Passers"
+          },
+          "Title": {
+            "Text": "Passers",
+            "Font": ";15.75;;"
+          },
+          "Font": ";13;;",
+          "ManuallyEnteredData": "H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ",
+          "Icon": "Users",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        },
+        "4": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator2",
+          "Guid": "b1b2bd55f8af4345abc88730aa998fb5",
+          "ClientRectangle": "600,40,600,160",
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "TextFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 3,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits, Abbreviation"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "89bdd64e09fe4b109d72f12eead6ca9d",
+            "Expression": "Sum(Visitors.Visitors)",
+            "Label": "Visitors"
+          },
+          "Title": {
+            "Text": "Visitors",
+            "Font": ";15.75;;"
+          },
+          "Font": ";13;;",
+          "Icon": "ManWoman",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
+        }
+      },
+      "Style": "DarkBlue",
+      "Border": ";;2;;;;;solid:Black"
+    }
+  }
+}

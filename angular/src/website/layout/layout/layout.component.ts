@@ -1,27 +1,3 @@
-import { Component, Injector, OnInit, AfterViewInit } from '@angular/core';
-import { accountModuleAnimation } from '@shared/animations/routerTransition';
-import { AppComponentBase } from '@shared/common/app-component-base';
-
-@Component({
-    selector: 'app-layout', // Optional: Add a selector if needed
-    templateUrl: './layout.component.html',
-    animations: [accountModuleAnimation()],
-    styleUrls: ['./layout.component.less'],
-})
-export class LayoutComponent extends AppComponentBase implements OnInit, AfterViewInit {
-    submitting = false;
-    isMultiTenancyEnabled: boolean;
-
-    constructor(injector: Injector) {
-        super(injector);
-        this.isMultiTenancyEnabled = this.multiTenancy.isEnabled;
-    }
-
-    ngOnInit(): void {
-        // Add initialization logic if needed
-    }
-
-    ngAfterViewInit(): void {
-        // Add post-view initialization logic if needed
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d6a0855a1f24e6480778b1f047334e072305258cb04e2c567fca75129013935
+size 895

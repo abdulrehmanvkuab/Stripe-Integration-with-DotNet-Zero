@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { SelectEditionComponent } from './select-edition.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: SelectEditionComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class SelectEditionRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e1051774c7a722a6b989e665702dbf6564c9c07891494fe2ad0efcba98bc834b
+size 431

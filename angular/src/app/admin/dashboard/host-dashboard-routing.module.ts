@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HostDashboardComponent } from './host-dashboard.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: HostDashboardComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class HostDashboardRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6b46c8d512948a02e3d1336678f98e26746030613fe6fc75af542f95a9aa9d1
+size 431

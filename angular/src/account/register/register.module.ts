@@ -1,12 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { RegisterRoutingModule } from './register-routing.module';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-import { RegisterComponent } from './register.component';
-import { PasswordModule } from 'primeng/password';
-
-@NgModule({
-    imports: [AppSharedModule, AccountSharedModule, RegisterRoutingModule, PasswordModule],
-    declarations: [RegisterComponent],
-})
-export class RegisterModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:09123aa166ce745634324c6c25e0ccba6c0ccf50bf40de7b98f1c98f2f22c374
+size 538

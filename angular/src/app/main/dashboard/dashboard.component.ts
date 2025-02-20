@@ -1,16 +1,3 @@
-import { Component, Injector, ViewEncapsulation } from '@angular/core';
-import { AppComponentBase } from '@shared/common/app-component-base';
-import { DashboardCustomizationConst } from '@app/shared/common/customizable-dashboard/DashboardCustomizationConsts';
-
-@Component({
-    templateUrl: './dashboard.component.html',
-    styleUrls: ['./dashboard.component.less'],
-    encapsulation: ViewEncapsulation.None,
-})
-export class DashboardComponent extends AppComponentBase {
-    dashboardName = DashboardCustomizationConst.dashboardNames.defaultTenantDashboard;
-
-    constructor(injector: Injector) {
-        super(injector);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:24ef03accadec9cf4a705bff7cf4feffb6f8ee7d7041f958b862ecf80828de52
+size 632

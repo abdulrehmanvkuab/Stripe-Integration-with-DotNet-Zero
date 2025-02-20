@@ -1,0 +1,1063 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <TV Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>TV</Alias>
+        <ConnectionStringEncrypted>w8j7KE1Ka2DoWs2Eahh3C9V4++tIbMqZ4kmhpeAI4KeQbM8oxUp76flRuYBiGGE/w3bR609QS7xrTf3YangiZ5BYzcvISyLdaXQ5jOkEJWPVYLsJxl0ixUYI5YROHOgP03jVye95Md1FUO3c8RjhG8Z0aeTGWVv1bHy98Glw</ConnectionStringEncrypted>
+        <Name>TV</Name>
+      </TV>
+    </Databases>
+    <DataSources isList="true" count="3">
+      <DVD Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>DVD</Alias>
+        <Columns isList="true" count="11">
+          <value>AgeOfBuildings,System.Decimal</value>
+          <value>AttendanceRates,System.Decimal</value>
+          <value>FacultyToAdministrationRatio,System.Decimal</value>
+          <value>FacultyWithAdvancedCertificationsOrDegrees,System.Decimal</value>
+          <value>Id,System.Int64</value>
+          <value>NumberOfTrainingSessions,System.Decimal</value>
+          <value>RetentionRate,System.Decimal</value>
+          <value>StudentToFacultyRatio,System.Decimal</value>
+          <value>Target,System.Decimal</value>
+          <value>Year,System.Int32</value>
+          <value>Yearid,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>cd2bebcb843242eba5d5efa720a28449</Key>
+        <Name>DVD</Name>
+        <NameInSource>TV</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from DVD</SqlCommand>
+      </DVD>
+      <Radio Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>Radio</Alias>
+        <Columns isList="true" count="7">
+          <value>AverageCostOfTransit,System.Decimal</value>
+          <value>AverageCostPerStudent,System.Decimal</value>
+          <value>AverageGrantMoney,System.Decimal</value>
+          <value>AverageTuitionCosts,System.Decimal</value>
+          <value>Id,System.Int64</value>
+          <value>Year,System.Int32</value>
+          <value>Yearid,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>1e991daaab094223be43bf936afb9e5b</Key>
+        <Name>Radio</Name>
+        <NameInSource>TV</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from Radio</SqlCommand>
+      </Radio>
+      <TV Ref="5" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>TV</Alias>
+        <Columns isList="true" count="9">
+          <value>Awards,System.Decimal</value>
+          <value>GraduationRate,System.Decimal</value>
+          <value>ResearchGrants,System.Decimal</value>
+          <value>StudentsLivingOnCampus,System.Decimal</value>
+          <value>StudentsOnAid,System.Decimal</value>
+          <value>Target,System.Decimal</value>
+          <value>Year,System.Int32</value>
+          <value>Yearid,System.Int32</value>
+          <value>asStudentAttendanceRate,System.Decimal</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>afd759c82b8d4e01af018ba960aac17c</Key>
+        <Name>TV</Name>
+        <NameInSource>TV</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from TV</SqlCommand>
+      </TV>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>939e855d21894715aa42e3064191ab7d</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Dashboard1 Ref="6" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
+      <Alias>Students KPI</Alias>
+      <BackColor>Transparent</BackColor>
+      <Components isList="true" count="17">
+        <Indicator9 Ref="7" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,240,300,80</ClientRectangle>
+          <CustomStyleName>Style24</CustomStyleName>
+          <DashboardInteraction Ref="8" type="Stimulsoft.Dashboard.Interactions.StiIndicatorDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Group>2</Group>
+          <Guid>49e9948afedc469c995fd8d22c3061de</Guid>
+          <Icon>Users</Icon>
+          <IconAlignment>None</IconAlignment>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <Margin>3,0,3,3</Margin>
+          <Name>Indicator9</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Style>Custom</Style>
+          <TextFormat Ref="9" type="PercentageFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="10" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Indicator</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="11" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="12" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(TV.GraduationRate)</Expression>
+            <Key>999f049b708b407eb9892281c99e0716</Key>
+            <Label>GraduationRate</Label>
+          </Value>
+        </Indicator9>
+        <Progress7 Ref="13" type="Stimulsoft.Dashboard.Components.Progress.StiProgressElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,80,300,160</ClientRectangle>
+          <CustomStyleName>Style16</CustomStyleName>
+          <DashboardInteraction Ref="14" type="Stimulsoft.Dashboard.Interactions.StiProgressDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13,Bold</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Group>2</Group>
+          <Guid>d522f8ef34434a6a8a5b703ee2962201</Guid>
+          <Margin>3,0,3,0</Margin>
+          <Mode>Pie</Mode>
+          <Name>Progress7</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <ProgressConditions isList="true" count="0" />
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Target Ref="15" type="Stimulsoft.Dashboard.Components.Progress.StiTargetProgressMeter" isKey="true">
+            <Expression>Sum(TV.Target)</Expression>
+            <Key>d0725eaaff8f4d1ca1e93f60f8b4cb8c</Key>
+            <Label>Target</Label>
+          </Target>
+          <TextFormat Ref="16" type="PercentageFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="17" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Progress</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="18" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="19" type="Stimulsoft.Dashboard.Components.Progress.StiValueProgressMeter" isKey="true">
+            <Expression>Sum(TV.GraduationRate)</Expression>
+            <Key>8ada7f0da4844f42a740bcb30c27390d</Key>
+            <Label>GraduationRate</Label>
+          </Value>
+        </Progress7>
+        <Text28 Ref="20" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>67, 106, 43</ForeColor>
+          <Guid>363d08100d9848149712b49265626730</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text28</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="36"&gt;&lt;text-align="Center"&gt;Students KPI&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="21" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text28>
+        <Text31 Ref="22" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>110, 187, 171</BackColor>
+          <ClientRectangle>0,40,300,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>White</ForeColor>
+          <Guid>be5081a6685f4aa7a532f6e15dcdf6b7</Guid>
+          <Margin>3,3,3,0</Margin>
+          <Name>Text31</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="24"&gt;&lt;text-align="Center"&gt;Graduation rate&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="23" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text31>
+        <Indicator13 Ref="24" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>300,240,300,80</ClientRectangle>
+          <CustomStyleName>Style22</CustomStyleName>
+          <DashboardInteraction Ref="25" type="Stimulsoft.Dashboard.Interactions.StiIndicatorDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Group>2</Group>
+          <Guid>21d8e7f78c2a41dda1c6fd6c4793a95d</Guid>
+          <Icon>Users</Icon>
+          <IconAlignment>None</IconAlignment>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <Margin>3,0,3,3</Margin>
+          <Name>Indicator13</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Style>Custom</Style>
+          <TextFormat Ref="26" type="PercentageFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="27" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Indicator</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="28" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="29" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(TV.asStudentAttendanceRate)</Expression>
+            <Key>6e77164c361e4073a67dcf9f1cdaa4fb</Key>
+            <Label>asStudentAttendanceRate</Label>
+          </Value>
+        </Indicator13>
+        <Progress11 Ref="30" type="Stimulsoft.Dashboard.Components.Progress.StiProgressElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>300,80,300,160</ClientRectangle>
+          <CustomStyleName>Style19</CustomStyleName>
+          <DashboardInteraction Ref="31" type="Stimulsoft.Dashboard.Interactions.StiProgressDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13,Bold</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Group>2</Group>
+          <Guid>2f3b03b7323d4fb28c6188126901e866</Guid>
+          <Margin>3,0,3,0</Margin>
+          <Mode>Pie</Mode>
+          <Name>Progress11</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <ProgressConditions isList="true" count="0" />
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Target Ref="32" type="Stimulsoft.Dashboard.Components.Progress.StiTargetProgressMeter" isKey="true">
+            <Expression>Sum(TV.Target)</Expression>
+            <Key>4a7be6741de0442f96bde71652527d9d</Key>
+            <Label>Target</Label>
+          </Target>
+          <TextFormat Ref="33" type="PercentageFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="34" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Progress</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="35" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="36" type="Stimulsoft.Dashboard.Components.Progress.StiValueProgressMeter" isKey="true">
+            <Expression>Sum(TV.asStudentAttendanceRate)</Expression>
+            <Key>f19aea96187a4622a1eafa0715556304</Key>
+            <Label>asStudentAttendanceRate</Label>
+          </Value>
+        </Progress11>
+        <Text27 Ref="37" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>140, 111, 193</BackColor>
+          <ClientRectangle>300,40,300,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>White</ForeColor>
+          <Guid>e466d8a84a4b4f3a9032cfab39c7de41</Guid>
+          <Margin>3,3,3,0</Margin>
+          <Name>Text27</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="24"&gt;&lt;text-align="Center"&gt;Student attendance rate&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="38" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text27>
+        <Indicator14 Ref="39" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,240,300,80</ClientRectangle>
+          <CustomStyleName>Style23</CustomStyleName>
+          <DashboardInteraction Ref="40" type="Stimulsoft.Dashboard.Interactions.StiIndicatorDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Group>2</Group>
+          <Guid>c7e87c6359314f3dbd4454252e8e2c31</Guid>
+          <Icon>Users</Icon>
+          <IconAlignment>None</IconAlignment>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <Margin>3,0,3,3</Margin>
+          <Name>Indicator14</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Style>Custom</Style>
+          <TextFormat Ref="41" type="PercentageFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="42" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Indicator</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="43" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="44" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(TV.StudentsOnAid)</Expression>
+            <Key>da5d39dbfdaf45298266139c93b145a2</Key>
+            <Label>StudentsOnAid</Label>
+          </Value>
+        </Indicator14>
+        <Progress12 Ref="45" type="Stimulsoft.Dashboard.Components.Progress.StiProgressElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,80,300,160</ClientRectangle>
+          <CustomStyleName>Style17</CustomStyleName>
+          <DashboardInteraction Ref="46" type="Stimulsoft.Dashboard.Interactions.StiProgressDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13,Bold</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Group>2</Group>
+          <Guid>5636fe64e22a45fda32b07d50b310fbc</Guid>
+          <Margin>3,0,3,0</Margin>
+          <Mode>Pie</Mode>
+          <Name>Progress12</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <ProgressConditions isList="true" count="0" />
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Target Ref="47" type="Stimulsoft.Dashboard.Components.Progress.StiTargetProgressMeter" isKey="true">
+            <Expression>Sum(TV.Target)</Expression>
+            <Key>d5a35c0e155d445dbfabb768ae8685b2</Key>
+            <Label>Target</Label>
+          </Target>
+          <TextFormat Ref="48" type="PercentageFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="49" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Progress</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="50" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="51" type="Stimulsoft.Dashboard.Components.Progress.StiValueProgressMeter" isKey="true">
+            <Expression>Sum(TV.StudentsOnAid)</Expression>
+            <Key>0af89f20cff14c0baa7ab07b15072942</Key>
+            <Label>StudentsOnAid</Label>
+          </Value>
+        </Progress12>
+        <Text36 Ref="52" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>127, 194, 117</BackColor>
+          <ClientRectangle>600,40,300,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>White</ForeColor>
+          <Guid>ab88cd93e92643b392be4f31720a68c0</Guid>
+          <Margin>3,3,3,0</Margin>
+          <Name>Text36</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="24"&gt;&lt;text-align="Center"&gt;Students on aid&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="53" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text36>
+        <Indicator15 Ref="54" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>900,240,300,80</ClientRectangle>
+          <CustomStyleName>Style21</CustomStyleName>
+          <DashboardInteraction Ref="55" type="Stimulsoft.Dashboard.Interactions.StiIndicatorDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Group>2</Group>
+          <Guid>875b352da47a49d3a6f1cbad6498f281</Guid>
+          <Icon>Users</Icon>
+          <IconAlignment>None</IconAlignment>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <Margin>3,0,3,3</Margin>
+          <Name>Indicator15</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Style>Custom</Style>
+          <TextFormat Ref="56" type="PercentageFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="57" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Indicator</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="58" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="59" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Avg(Students.StudentsLivingOnCampus)</Expression>
+            <Key>7e186d39dfd540c4a633f1077f9a4ae3</Key>
+            <Label>StudentsLivingOnCampus</Label>
+          </Value>
+        </Indicator15>
+        <Progress13 Ref="60" type="Stimulsoft.Dashboard.Components.Progress.StiProgressElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>900,80,300,160</ClientRectangle>
+          <CustomStyleName>Style20</CustomStyleName>
+          <DashboardInteraction Ref="61" type="Stimulsoft.Dashboard.Interactions.StiProgressDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13,Bold</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Group>2</Group>
+          <Guid>b51854ca8d1c489ea23762d3e871b27a</Guid>
+          <Margin>3,0,3,0</Margin>
+          <Mode>Pie</Mode>
+          <Name>Progress13</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <ProgressConditions isList="true" count="0" />
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Target Ref="62" type="Stimulsoft.Dashboard.Components.Progress.StiTargetProgressMeter" isKey="true">
+            <Expression>Sum(TV.Target)</Expression>
+            <Key>11db32bed7854bd187b3c31b413470ec</Key>
+            <Label>Target</Label>
+          </Target>
+          <TextFormat Ref="63" type="PercentageFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="64" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Progress</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="65" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="66" type="Stimulsoft.Dashboard.Components.Progress.StiValueProgressMeter" isKey="true">
+            <Expression>Sum(TV.StudentsLivingOnCampus)</Expression>
+            <Key>b59376612f1c465db094b94df6621bc0</Key>
+            <Label>StudentsLivingOnCampus</Label>
+          </Value>
+        </Progress13>
+        <Text38 Ref="67" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>214, 93, 146</BackColor>
+          <ClientRectangle>900,40,300,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>White</ForeColor>
+          <Guid>13aa324bfe2d457b95c26dbc5cc34417</Guid>
+          <Margin>3,3,3,0</Margin>
+          <Name>Text38</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="24"&gt;&lt;text-align="Center"&gt;Students living on campus&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="68" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text38>
+        <Indicator10 Ref="69" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>760,360,440,240</ClientRectangle>
+          <CustomStyleName>Style14</CustomStyleName>
+          <DashboardInteraction Ref="70" type="Stimulsoft.Dashboard.Interactions.StiIndicatorDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Group>2</Group>
+          <Guid>afc4865ad5ee4a4db2a73f2533b61f38</Guid>
+          <Icon>Binoculars</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <Margin>3,0,3,3</Margin>
+          <Name>Indicator10</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Style>Custom</Style>
+          <TextFormat Ref="71" type="PercentageFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="72" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Indicator</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="73" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="74" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(TV.ResearchGrants)</Expression>
+            <Key>8cc2926c14904e109904cbde8c2c8b83</Key>
+            <Label>ResearchGrants</Label>
+          </Value>
+        </Indicator10>
+        <Chart1 Ref="75" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <Area Ref="76" type="Stimulsoft.Dashboard.Components.Chart.StiChartArea" isKey="true">
+            <ColorEach>True</ColorEach>
+            <InterlacingHor Ref="77" type="Stimulsoft.Dashboard.Components.Chart.StiHorChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingHor>
+            <InterlacingVert Ref="78" type="Stimulsoft.Dashboard.Components.Chart.StiVertChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingVert>
+            <XAxis Ref="79" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxis" isKey="true">
+              <Labels Ref="80" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="81" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="82" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </XAxis>
+            <YAxis Ref="83" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxis" isKey="true">
+              <Labels Ref="84" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="85" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="86" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </YAxis>
+          </Area>
+          <Arguments isList="true" count="0" />
+          <BackColor>Transparent</BackColor>
+          <ChartConditions isList="true" count="0" />
+          <ClientRectangle>0,360,760,240</ClientRectangle>
+          <CloseValues isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName>Style26</CustomStyleName>
+          <DashboardInteraction Ref="87" type="Stimulsoft.Dashboard.Interactions.StiChartDashboardInteraction" isKey="true">
+            <DrillDownParameters isList="true" count="0" />
+            <ShowFullScreenButton>False</ShowFullScreenButton>
+            <ShowSaveButton>False</ShowSaveButton>
+          </DashboardInteraction>
+          <DataFilters isList="true" count="0" />
+          <EndValues isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Group>2</Group>
+          <Guid>909147583d9244178fd59581271538c6</Guid>
+          <HighValues isList="true" count="0" />
+          <Labels Ref="88" type="Stimulsoft.Dashboard.Components.Chart.StiChartLabels" isKey="true">
+            <Font>Arial,8</Font>
+            <ForeColor>Transparent</ForeColor>
+          </Labels>
+          <Legend Ref="89" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegend" isKey="true">
+            <Labels Ref="90" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendLabels" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,8</Font>
+            </Labels>
+            <Title Ref="91" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendTitle" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,12,Bold</Font>
+            </Title>
+          </Legend>
+          <LowValues isList="true" count="0" />
+          <ManuallyEnteredChartMeter Ref="92" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            <Key>cfb9ac88654845c49f870439ba3c59bf</Key>
+          </ManuallyEnteredChartMeter>
+          <Margin>3,0,3,3</Margin>
+          <Marker Ref="93" type="Stimulsoft.Dashboard.Components.Chart.StiChartMarker" isKey="true" />
+          <Name>Chart1</Name>
+          <NegativeSeriesColors />
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <ParetoSeriesColors />
+          <RoundValues>True</RoundValues>
+          <Series Ref="94" type="Stimulsoft.Dashboard.Components.Chart.StiSeriesChartMeter" isKey="true">
+            <Expression>TV.Year</Expression>
+            <Key>40d4c6cfd8274de1bd46dd0bd085a5dd</Key>
+            <Label>Year</Label>
+          </Series>
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Title Ref="95" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Chart</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="96" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <TrendLines isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <UserViewStates isList="true" count="0" />
+          <ValueFormat Ref="97" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits</State>
+          </ValueFormat>
+          <Values isList="true" count="1">
+            <Item21 Ref="98" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(TV.Awards)</Expression>
+              <Key>9cb7899372f044ebae54311931b01f65</Key>
+              <Label>Awards</Label>
+              <SeriesType>Waterfall</SeriesType>
+            </Item21>
+          </Values>
+          <Weights isList="true" count="0" />
+        </Chart1>
+        <Text21 Ref="99" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>175, 114, 60</BackColor>
+          <ClientRectangle>0,320,760,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>White</ForeColor>
+          <Guid>2b3eccfb20884022b3c2333a2d2c6dc4</Guid>
+          <Margin>3,3,3,0</Margin>
+          <Name>Text21</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="24"&gt;&lt;text-align="Center"&gt;Awards&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="100" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text21>
+        <Text23 Ref="101" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>115, 99, 145</BackColor>
+          <ClientRectangle>760,320,440,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>White</ForeColor>
+          <Guid>4a36d265cf764922ae0434ee3c2654cb</Guid>
+          <Margin>3,3,3,0</Margin>
+          <Name>Text23</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="24"&gt;&lt;text-align="Center"&gt;Research grants&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="102" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text23>
+      </Components>
+      <DashboardWatermark Ref="103" type="Stimulsoft.Base.Drawing.StiAdvancedWatermark" isKey="true">
+        <TextColor>Gray</TextColor>
+        <TextFont>Arial,36</TextFont>
+        <WeaveMajorColor>119, 119, 119, 119</WeaveMajorColor>
+        <WeaveMinorColor>85, 119, 119, 119</WeaveMinorColor>
+      </DashboardWatermark>
+      <Expressions isList="true" count="0" />
+      <Guid>76bac6927cc64fdbbe179bd9ed6f6550</Guid>
+      <Name>Dashboard1</Name>
+      <Report isRef="0" />
+    </Dashboard1>
+  </Pages>
+  <PreviewSettings>25108991</PreviewSettings>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>DashboardStudentsKPI</ReportAlias>
+  <ReportAuthor>Stimulsoft</ReportAuthor>
+  <ReportChanged>5/30/2020 8:31:42 PM</ReportChanged>
+  <ReportCreated>8/25/2019 6:46:34 PM</ReportCreated>
+  <ReportFile>C:\Users\HP\Downloads\dashboard\Samples-Dashboards-ASP.NET-6.0-MVC-master\Web Demo\Dashboards/DashboardStudentsKPI.mrt</ReportFile>
+  <ReportGuid>10122f4ac4194737abb0983a601c2434</ReportGuid>
+  <ReportName>DashboardStudentsKPI</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2023.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Education_Dashboard : Stimulsoft.Report.StiReport
+    {
+        public Education_Dashboard()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="10">
+    <Style16 Ref="104" type="Stimulsoft.Report.StiProgressStyle" isKey="true">
+      <BackColor>110, 187, 171</BackColor>
+      <BandColor>White</BandColor>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <ForeColor>White</ForeColor>
+      <Name>Style16</Name>
+      <SeriesColors>[179:136:108], [79:115:122], [52:60:73], [207:211:221]</SeriesColors>
+      <TrackColor>72, 115, 122</TrackColor>
+    </Style16>
+    <Style17 Ref="105" type="Stimulsoft.Report.StiProgressStyle" isKey="true">
+      <BackColor>127, 194, 117</BackColor>
+      <BandColor>233, 245, 252</BandColor>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <ForeColor>White</ForeColor>
+      <Name>Style17</Name>
+      <SeriesColors>[141:200:194], [52:60:73], [79:115:122], [207:211:221]</SeriesColors>
+      <TrackColor>108, 145, 102</TrackColor>
+    </Style17>
+    <Style19 Ref="106" type="Stimulsoft.Report.StiProgressStyle" isKey="true">
+      <BackColor>140, 111, 193</BackColor>
+      <BandColor>233, 245, 252</BandColor>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <ForeColor>White</ForeColor>
+      <Name>Style19</Name>
+      <SeriesColors>[155:165:224], [52:60:73], [79:115:122], [207:211:221]</SeriesColors>
+      <TrackColor>115, 99, 145</TrackColor>
+    </Style19>
+    <Style20 Ref="107" type="Stimulsoft.Report.StiProgressStyle" isKey="true">
+      <BackColor>214, 93, 146</BackColor>
+      <BandColor>233, 245, 252</BandColor>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <ForeColor>White</ForeColor>
+      <Name>Style20</Name>
+      <SeriesColors>[143:174:100], [52:60:73], [79:115:122], [207:211:221]</SeriesColors>
+      <TrackColor>160, 92, 122</TrackColor>
+    </Style20>
+    <Style21 Ref="108" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>214, 93, 146</BackColor>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <ForeColor>233, 244, 252</ForeColor>
+      <GlyphColor>White</GlyphColor>
+      <HotBackColor>124, 141, 154</HotBackColor>
+      <Name>Style21</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Style21>
+    <Style22 Ref="109" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>140, 111, 193</BackColor>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <ForeColor>233, 244, 252</ForeColor>
+      <GlyphColor>White</GlyphColor>
+      <HotBackColor>124, 141, 154</HotBackColor>
+      <Name>Style22</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Style22>
+    <Style23 Ref="110" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>127, 194, 117</BackColor>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <ForeColor>233, 244, 252</ForeColor>
+      <GlyphColor>White</GlyphColor>
+      <HotBackColor>124, 141, 154</HotBackColor>
+      <Name>Style23</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Style23>
+    <Style24 Ref="111" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>110, 187, 171</BackColor>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <ForeColor>233, 244, 252</ForeColor>
+      <GlyphColor>White</GlyphColor>
+      <HotBackColor>124, 141, 154</HotBackColor>
+      <Name>Style24</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Style24>
+    <Style26 Ref="112" type="Stimulsoft.Report.StiChartStyle" isKey="true">
+      <AxisLabelsColor>White</AxisLabelsColor>
+      <AxisLineColor>White</AxisLineColor>
+      <AxisTitleColor>White</AxisTitleColor>
+      <BasicStyleColor>White</BasicStyleColor>
+      <Brush>[175:114:60]</Brush>
+      <ChartAreaBorderColor>Transparent</ChartAreaBorderColor>
+      <ChartAreaBrush>[175:114:60]</ChartAreaBrush>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <GridLinesHorColor>Transparent</GridLinesHorColor>
+      <GridLinesVertColor>Transparent</GridLinesVertColor>
+      <InterlacingHorBrush>[10:155:155:155]</InterlacingHorBrush>
+      <InterlacingVertBrush>[10:155:155:155]</InterlacingVertBrush>
+      <LegendBorderColor>Transparent</LegendBorderColor>
+      <LegendBrush>[255:255:255]</LegendBrush>
+      <LegendLabelsColor>140, 140, 140</LegendLabelsColor>
+      <LegendTitleColor>DimGray</LegendTitleColor>
+      <MarkerVisible>False</MarkerVisible>
+      <Name>Style26</Name>
+      <SeriesBorderColor>Transparent</SeriesBorderColor>
+      <SeriesLabelsBorderColor>Transparent</SeriesLabelsBorderColor>
+      <SeriesLabelsBrush>Transparent</SeriesLabelsBrush>
+      <SeriesLabelsColor>50, 58, 69</SeriesLabelsColor>
+      <SeriesLabelsLineColor>DimGray</SeriesLabelsLineColor>
+      <StyleColors>[140:111:183], [127:194:117], [110:187:171], [212:94:146], [229:133:109], [210:66:64]</StyleColors>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+      <TrendLineColor>DimGray</TrendLineColor>
+    </Style26>
+    <Style14 Ref="113" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>115, 99, 145</BackColor>
+      <CollectionName>Students</CollectionName>
+      <Conditions isList="true" count="0" />
+      <ForeColor>White</ForeColor>
+      <GlyphColor>White</GlyphColor>
+      <HotBackColor>ButtonFace</HotBackColor>
+      <Name>Style14</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Style14>
+  </Styles>
+</StiSerializer>

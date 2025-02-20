@@ -1,24 +1,3 @@
-import { Component, Injector } from '@angular/core';
-import { appModuleAnimation } from '@shared/animations/routerTransition';
-import { AppComponentBase } from '@shared/common/app-component-base';
-import { DemoUiComponentsServiceProxy } from '@shared/service-proxies/service-proxies';
-
-@Component({
-    selector: 'demo-ui-editor',
-    templateUrl: './demo-ui-editor.component.html',
-    animations: [appModuleAnimation()],
-})
-export class DemoUiEditorComponent extends AppComponentBase {
-    htmlEditorInput: string;
-
-    constructor(injector: Injector, private demoUiComponentsService: DemoUiComponentsServiceProxy) {
-        super(injector);
-    }
-
-    // input mask - post
-    submitValue(): void {
-        this.demoUiComponentsService.sendAndGetValue(this.htmlEditorInput).subscribe((data) => {
-            this.message.info(data.output, this.l('PostedValue'), { isHtml: true });
-        });
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9cfb436a31d406ed65a42fcfbf46ae596f652e4ea53b3df66a987805727602cd
+size 904

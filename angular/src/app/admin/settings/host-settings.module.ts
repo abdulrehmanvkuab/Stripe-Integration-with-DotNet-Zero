@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { HostSettingsRoutingModule } from './host-settings-routing.module';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { HostSettingsComponent } from './host-settings.component';
-
-@NgModule({
-    declarations: [HostSettingsComponent],
-    imports: [AppSharedModule, AdminSharedModule, HostSettingsRoutingModule],
-})
-export class HostSettingsModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:16635b9762ef3508694b754ea811d5f3953381d12ad2a6533042888df94b6c46
+size 497

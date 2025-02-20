@@ -1,29 +1,3 @@
-import { Component, OnInit, Injector } from '@angular/core';
-import { InputTypeComponentBase } from '../input-type-component-base';
-
-@Component({
-    selector: 'app-multiple-select-input-type',
-    templateUrl: './multiple-select-combobox-input-type.component.html',
-})
-export class MultipleSelectComboboxInputTypeComponent extends InputTypeComponentBase implements OnInit {
-    filteredValues: string[];
-
-    constructor(injector: Injector) {
-        super(injector);
-    }
-
-    ngOnInit() {
-        this.filteredValues = this.allValues;
-    }
-
-    getSelectedValues(): string[] {
-        if (!this.selectedValues) {
-            return [];
-        }
-        return this.selectedValues;
-    }
-
-    filter(event) {
-        this.filteredValues = this.allValues.filter((item) => item.toLowerCase().includes(event.query.toLowerCase()));
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7d560ac86b5578800784a95c3a129f584de114bc17525678c867c9e2cac0fd7
+size 841

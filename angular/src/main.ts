@@ -1,26 +1,3 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { environment } from './environments/environment';
-import { hmrBootstrap } from './hmr';
-import { RootModule } from './root.module';
-
-if (environment.production) {
-    enableProdMode();
-}
-
-const bootstrap = () => platformBrowserDynamic().bootstrapModule(RootModule);
-
-/* "Hot Module Replacement" is enabled as described on
- * https://medium.com/@beeman/tutorial-enable-hrm-in-angular-cli-apps-1b0d13b80130#.sa87zkloh
- */
-
-if (environment.hmr) {
-    if (module['hot']) {
-        hmrBootstrap(module, bootstrap); //HMR enabled bootstrap
-    } else {
-        console.error('HMR is not enabled for webpack-dev-server!');
-        console.log('Are you using the --hmr flag for ng serve?');
-    }
-} else {
-    bootstrap(); //Regular bootstrap
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d8a39b4ee7c4e0405a880dfc6aa586023c299676f08c01c66c2809ccfcf2736c
+size 869

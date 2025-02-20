@@ -1,17 +1,3 @@
-﻿import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { GatewaySelectionComponent } from './gateway-selection.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: GatewaySelectionComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class BuyRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:101d0a21032f50676e9ae8c0002499e12734a3c3bd8559ce36506bb513e81df2
+size 433

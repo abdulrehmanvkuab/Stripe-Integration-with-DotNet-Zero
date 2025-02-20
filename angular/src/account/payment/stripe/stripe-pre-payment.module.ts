@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-import { StripePrePaymentRoutingModule } from './stripe-pre-payment-routing.module';
-import { StripePrePaymentComponent } from './stripe-pre-payment.component';
-
-@NgModule({
-    declarations: [StripePrePaymentComponent],
-    imports: [AppSharedModule, AccountSharedModule, StripePrePaymentRoutingModule],
-})
-export class StripePrePaymentModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d936af61df0d2e501670c0c9214ccbc523fd23589dd802728ab7c057f45908d
+size 531

@@ -1,0 +1,16 @@
+﻿@page "/"
+@using Arch.Core.Dependency
+@inherits ArchMainLayoutPageComponentBase
+
+<div class="card">
+    <div class="card-body">
+        INDEX
+    </div>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        DependencyResolver.Resolve<INavigationService>().NavigateTo(NavigationUrlConsts.User);
+    }
+}

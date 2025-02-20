@@ -1,27 +1,3 @@
-import { Injector, Component, ViewEncapsulation, Inject, Input, OnInit } from '@angular/core';
-import { AppConsts } from '@shared/AppConsts';
-import { AppComponentBase } from '@shared/common/app-component-base';
-
-import { DOCUMENT } from '@angular/common';
-
-@Component({
-    templateUrl: './theme6-brand.component.html',
-    selector: 'theme6-brand',
-    encapsulation: ViewEncapsulation.None,
-})
-export class Theme6BrandComponent extends AppComponentBase implements OnInit {
-    @Input() anchorClass = 'd-flex align-items-center';
-    @Input() skin = 'dark';
-    @Input() imageClass = 'h-45px logo';
-
-    defaultLogo = '';
-    remoteServiceBaseUrl: string = AppConsts.remoteServiceBaseUrl;
-
-    constructor(injector: Injector, @Inject(DOCUMENT) private document: Document) {
-        super(injector);
-    }
-
-    ngOnInit(): void {
-        this.defaultLogo = AppConsts.appBaseUrl + '/assets/common/images/app-logo-on-' + this.skin + '-sm.svg';
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7946d16e3f0937ba5b1edc4454856c8003e6d9f3a0b1f693343fc2e471deff2d
+size 951

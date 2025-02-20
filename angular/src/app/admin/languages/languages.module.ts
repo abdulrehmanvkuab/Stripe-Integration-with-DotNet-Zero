@@ -1,12 +1,3 @@
-import { NgModule } from '@angular/core';
-import { LanguagesRoutingModules } from './languages-routing-modules.module';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { LanguagesComponent } from './languages.component';
-import { CreateOrEditLanguageModalComponent } from './create-or-edit-language-modal.component';
-
-@NgModule({
-    declarations: [LanguagesComponent, CreateOrEditLanguageModalComponent],
-    imports: [AppSharedModule, AdminSharedModule, LanguagesRoutingModules],
-})
-export class LanguagesModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f5562f204b2387a4721d8f2b3e860696d12c552f5d5c6884fe92f55befdd3f4a
+size 616

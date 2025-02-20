@@ -1,18 +1,3 @@
-import { Injectable } from '@angular/core';
-import { AppConsts } from '@shared/AppConsts';
-import { FileDto } from '@shared/service-proxies/service-proxies';
-
-@Injectable()
-export class FileDownloadService {
-    downloadTempFile(file: FileDto) {
-        const url =
-            AppConsts.remoteServiceBaseUrl +
-            '/File/DownloadTempFile?fileType=' +
-            file.fileType +
-            '&fileToken=' +
-            file.fileToken +
-            '&fileName=' +
-            file.fileName;
-        location.href = url; //TODO: This causes reloading of same page in Firefox
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1872c5b053130cf7e902a647e39e9c2484a88d72c63d405dc2e868b36f968b32
+size 590

@@ -1,27 +1,3 @@
-import { Injector, Pipe, PipeTransform } from '@angular/core';
-import { PermissionCheckerService } from 'abp-ng2-module';
-
-@Pipe({
-    name: 'permissionAll',
-})
-export class PermissionAllPipe implements PipeTransform {
-    permission: PermissionCheckerService;
-
-    constructor(injector: Injector) {
-        this.permission = injector.get(PermissionCheckerService);
-    }
-
-    transform(arrPermissions: string[]): boolean {
-        if (!arrPermissions) {
-            return false;
-        }
-
-        for (const permission of arrPermissions) {
-            if (!this.permission.isGranted(permission)) {
-                return false;
-            }
-        }
-
-        return true; //all permissions are granted
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d6c784cdf12bba38237a2c27aa814f3ebe76952011f134b06b73cf25479fbe29
+size 715

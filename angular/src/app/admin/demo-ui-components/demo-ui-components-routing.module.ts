@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { DemoUiComponentsComponent } from './demo-ui-components.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: DemoUiComponentsComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class DemoUIComponentsRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3a3023b92a2130f095f5de5c251789e16a3a09bc5fc3f46f5642db36b8115fe
+size 444

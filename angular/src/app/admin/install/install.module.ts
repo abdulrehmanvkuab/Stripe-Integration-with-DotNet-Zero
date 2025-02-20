@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { InstallRoutingModule } from './install-routing-module';
-import { InstallComponent } from './install.component';
-
-@NgModule({
-    declarations: [InstallComponent],
-    imports: [AppSharedModule, AdminSharedModule, InstallRoutingModule],
-})
-export class InstallModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4968c0c106e51eeefd51289569e7b1e4f5acb33507bc1054140853624af58bf4
+size 460

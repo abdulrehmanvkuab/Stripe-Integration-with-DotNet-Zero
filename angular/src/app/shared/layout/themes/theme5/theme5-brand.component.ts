@@ -1,28 +1,3 @@
-import { Injector, Component, ViewEncapsulation, Inject, OnInit } from '@angular/core';
-
-import { AppConsts } from '@shared/AppConsts';
-import { AppComponentBase } from '@shared/common/app-component-base';
-
-import { DOCUMENT } from '@angular/common';
-
-@Component({
-    templateUrl: './theme5-brand.component.html',
-    selector: 'theme5-brand',
-    encapsulation: ViewEncapsulation.None,
-})
-export class Theme5BrandComponent extends AppComponentBase implements OnInit {
-    defaultLogo = '';
-    skin = this.currentTheme.baseSettings.layout.darkMode ? 'dark' : 'light';
-    remoteServiceBaseUrl: string = AppConsts.remoteServiceBaseUrl;
-
-    constructor(injector: Injector, @Inject(DOCUMENT) private document: Document) {
-        super(injector);
-    }
-
-    ngOnInit(): void {
-        this.defaultLogo =
-        AppConsts.appBaseUrl +
-        '/assets/common/images/app-logo-on-' + this.skin + '.svg';
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:efa62db7d8792077433471ccd0b7ada6178b81016c948cf5cad5b0df904e1575
+size 911

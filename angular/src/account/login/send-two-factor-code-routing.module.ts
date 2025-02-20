@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { SendTwoFactorCodeComponent } from './send-two-factor-code.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: SendTwoFactorCodeComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class SendTwoFactorCodeRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:455ae71272e15aba03f7c7f97cde31612b20803455350f2208dd4ee85fc78b7c
+size 449

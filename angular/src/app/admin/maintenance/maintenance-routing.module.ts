@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { MaintenanceComponent } from '@app/admin/maintenance/maintenance.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: MaintenanceComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class MaintenanceRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:678ba81287b5c3bf3c06e4fdebc6dcfedbf050e3fd4c656dede8c1e4091ebd89
+size 443

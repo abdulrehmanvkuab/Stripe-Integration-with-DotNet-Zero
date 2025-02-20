@@ -1,14 +1,3 @@
-import { Injectable } from '@angular/core';
-
-@Injectable()
-export class GuidGeneratorService {
-    guid(): string {
-        function s4() {
-            return Math.floor((1 + Math.random()) * 0x10000)
-                .toString(16)
-                .substring(1);
-        }
-
-        return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b3c107921359749ce53f7eb5552b868476a0f4cdab1718dc0fb013f5ab36b6e
+size 375

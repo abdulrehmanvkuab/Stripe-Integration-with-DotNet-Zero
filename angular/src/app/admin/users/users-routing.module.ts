@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { UsersComponent } from '@app/admin/users/users.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: UsersComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class UsersRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a92d1c877e018180ebbbe60a9ebf58d4af529fc53b1772d7862bd950bc0d2030
+size 413

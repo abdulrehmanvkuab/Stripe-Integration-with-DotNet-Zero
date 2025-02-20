@@ -1,23 +1,3 @@
-import { Component, Injector, ViewChild, OnInit } from '@angular/core';
-import { AppComponentBase } from '@shared/common/app-component-base';
-import { UpdateGoogleAuthenticatorKeyOutput } from '@shared/service-proxies/service-proxies';
-import { ModalDirective } from 'ngx-bootstrap/modal';
-
-@Component({
-    selector: 'recoveryCodesComponent',
-    templateUrl: './recovery-codes.component.html'
-})
-
-export class RecoveryCodesComponent extends AppComponentBase implements OnInit {
-    @ViewChild('recoveryCodesComponent', { static: true }) recoveryCodesComponent: ModalDirective;
-
-    public model: UpdateGoogleAuthenticatorKeyOutput;
-
-    constructor(injector: Injector) {
-        super(injector);
-    }
-
-    ngOnInit(): void {
-        this.model = new UpdateGoogleAuthenticatorKeyOutput();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:55b0ef6b395aca92d4724cc0e505afcc48b016d9b875de4923341ff0b55bddc0
+size 799

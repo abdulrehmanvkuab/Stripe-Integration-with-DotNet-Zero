@@ -1,33 +1,3 @@
-import { Injectable } from '@angular/core';
-import * as localForage from 'localforage';
-
-@Injectable()
-export class LocalStorageService {
-    getItem(key: string, callback: any): void {
-        if (!localForage) {
-            return;
-        }
-
-        localForage.getItem(key, callback);
-    }
-
-    setItem(key, value, callback?: any): void {
-        if (!localForage) {
-            return;
-        }
-
-        if (value === null) {
-            value = undefined;
-        }
-
-        localForage.setItem(key, value, callback);
-    }
-
-    removeItem(key, callback?: any): void {
-        if (!localForage) {
-            return;
-        }
-
-        localForage.removeItem(key, callback);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:08ab3fcc5a1faf36a54a55dcf3ae79b3bf7ea1ce00fedfe84abc09491ff37e9a
+size 691

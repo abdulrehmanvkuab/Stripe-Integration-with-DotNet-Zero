@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { RegisterTenantComponent } from './register-tenant.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: RegisterTenantComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class RegisterTenantRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:73b0af5c6593f59b6dd43fb9331fe3472a8b4885b62e8eb1b95b9665eaf1d60d
+size 435

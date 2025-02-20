@@ -1,12 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RolesRoutingModule } from './roles-routing.module';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { RolesComponent } from './roles.component';
-import { CreateOrEditRoleModalComponent } from './create-or-edit-role-modal.component';
-
-@NgModule({
-    declarations: [RolesComponent, CreateOrEditRoleModalComponent],
-    imports: [AppSharedModule, AdminSharedModule, RolesRoutingModule],
-})
-export class RolesModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:297252af7842aff11fbf470408d74a0cb3fb5dee7c674148a95bfc4337c0593b
+size 566

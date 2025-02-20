@@ -1,15 +1,3 @@
-import { ApplicationRef, NgModuleRef } from '@angular/core';
-import { createNewHosts } from '@angularclass/hmr';
-
-export const hmrBootstrap = (module: any, bootstrap: () => Promise<NgModuleRef<any>>) => {
-    let ngModule: NgModuleRef<any>;
-    module.hot.accept();
-    bootstrap().then((mod) => (ngModule = mod));
-    module.hot.dispose(() => {
-        const appRef: ApplicationRef = ngModule.injector.get(ApplicationRef);
-        const elements = appRef.components.map((c) => c.location.nativeElement);
-        const makeVisible = createNewHosts(elements);
-        ngModule.destroy();
-        makeVisible();
-    });
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b73170987234d48633705a9744d624884a2c449964198096cb1c0d8675c93d3
+size 621

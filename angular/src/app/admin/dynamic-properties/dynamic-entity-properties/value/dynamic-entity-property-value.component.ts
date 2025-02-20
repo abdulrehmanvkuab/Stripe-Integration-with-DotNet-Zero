@@ -1,34 +1,3 @@
-import { Component, OnInit, Injector, ViewChild } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
-import { AppComponentBase } from '@shared/common/app-component-base';
-import { appModuleAnimation } from '@shared/animations/routerTransition';
-import { ManagerComponent } from '@app/admin/dynamic-properties/dynamic-entity-properties/value/manager.component';
-
-@Component({
-    templateUrl: './dynamic-entity-property-value.component.html',
-    animations: [appModuleAnimation()],
-})
-export class DynamicEntityPropertyValueComponent extends AppComponentBase implements OnInit {
-    @ViewChild('dynamicEntityPropertyValueManager', { static: false })
-        dynamicEntityPropertyValueManager: ManagerComponent;
-
-    entityFullName: string;
-    entityId: string;
-
-    initialized = false;
-    constructor(_injector: Injector, private _activatedRoute: ActivatedRoute) {
-        super(_injector);
-    }
-
-    ngOnInit() {
-        this._activatedRoute.params.subscribe((params: Params) => {
-            this.entityFullName = params['entityFullName'];
-            this.entityId = params['rowId'];
-            this.initialized = true;
-        });
-    }
-
-    saveAll(): void {
-        this.dynamicEntityPropertyValueManager.saveAll();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5424b7a203082691012d6317d1218c2062825d7df935b9da9b926e20635d252a
+size 1264

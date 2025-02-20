@@ -1,26 +1,3 @@
-import { Component, OnInit, Injector } from '@angular/core';
-import { InputTypeComponentBase } from '../input-type-component-base';
-
-@Component({
-    selector: 'app-single-line-string-input-type',
-    templateUrl: './single-line-string-input-type.component.html',
-    styleUrls: ['./single-line-string-input-type.component.css'],
-})
-export class SingleLineStringInputTypeComponent extends InputTypeComponentBase implements OnInit {
-    selectedValue: string;
-
-    constructor(injector: Injector) {
-        super(injector);
-    }
-
-    getSelectedValues(): string[] {
-        if (!this.selectedValue) {
-            return [];
-        }
-        return [this.selectedValue];
-    }
-
-    ngOnInit(): void {
-        this.selectedValue = this.selectedValues[0];
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2c589d6ddba40170c6233a0bd20d2ad6ea17dc7df2d171a4efa81925f9141fa
+size 762

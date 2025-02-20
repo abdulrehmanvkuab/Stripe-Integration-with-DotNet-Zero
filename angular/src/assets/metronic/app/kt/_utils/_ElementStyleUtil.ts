@@ -1,17 +1,3 @@
-export class ElementStyleUtil {
-  public static set(element: HTMLElement, property: string, value?: any, important?: boolean) {
-    if (important) {
-      element.style.setProperty(property, value, 'important')
-    } else {
-      element.style.setProperty(property, value)
-    }
-  }
-
-  public static get(element: HTMLElement, attributeName: string) {
-    return element.style.getPropertyValue(attributeName)
-  }
-
-  public static remove(element: HTMLElement, attibuteName: string) {
-    element.style.removeProperty(attibuteName)
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ee169739cf2a77557687e9e6c3775ff94d99b1f3f1bdb9af10bb6cd85ab85a1
+size 535

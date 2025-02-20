@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <tears Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>tears</Alias>
+        <ConnectionStringEncrypted>w8j7KE1Ka2DoWs2Eahh3C9V4++tIbMqZ4kmhpeAI4KeQbM8oxUp76flRuYBiGGE/w3bR609QS7xrTf3YangiZ5BYzcvISyLdaXQ5jOkEJWPVYLsJxl0ixUYI5YROHOgP03jVye95Md1FUO3c8RjhG8Z0aeTGWVv1bHy98Glw</ConnectionStringEncrypted>
+        <Name>tears</Name>
+      </tears>
+    </Databases>
+    <DataSources isList="true" count="9">
+      <Smaat Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>Smaat</Alias>
+        <Columns isList="true" count="6">
+          <value>AverageCostOfTransit,System.Decimal</value>
+          <value>AverageCostPerStudent,System.Decimal</value>
+          <value>AverageGrantMoney,System.Decimal</value>
+          <value>AverageTuitionCosts,System.Decimal</value>
+          <value>Year,System.Int32</value>
+          <value>YearID,System.Int64</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>6decd48f34aa4cb7a373418adbc0f609</Key>
+        <Name>Smaat</Name>
+        <NameInSource>tears</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from Smaat</SqlCommand>
+      </Smaat>
+      <Smart6 Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>Smart6</Alias>
+        <Columns isList="true" count="10">
+          <value>AvailableStaff,System.Decimal</value>
+          <value>AverageERWaitingTime,System.Decimal</value>
+          <value>AverageTreatmentCosts,System.Decimal</value>
+          <value>Division,System.String</value>
+          <value>Inpatients,System.Decimal</value>
+          <value>Month,System.String</value>
+          <value>Monthid,System.Int32</value>
+          <value>Outpatients,System.Decimal</value>
+          <value>Patients,System.Decimal</value>
+          <value>PatientsAdmitted,System.Decimal</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>f516b2173b804d9db5b762038557e7a2</Key>
+        <Name>Smart6</Name>
+        <NameInSource>tears</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from Smart6</SqlCommand>
+      </Smart6>
+      <Smart9 Ref="5" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>Smart9</Alias>
+        <Columns isList="true" count="14">
+          <value>AnswerCategory,System.String</value>
+          <value>ArrivalToBed,System.Decimal</value>
+          <value>AverageTestTime,System.Decimal</value>
+          <value>Instructions,System.Decimal</value>
+          <value>LabTest,System.String</value>
+          <value>Month,System.String</value>
+          <value>Monthid,System.Int32</value>
+          <value>OverallSatisfaction,System.Decimal</value>
+          <value>PatientFalls,System.Decimal</value>
+          <value>Questions,System.Decimal</value>
+          <value>TargetSatisfaction,System.Decimal</value>
+          <value>TargetTestTime,System.Decimal</value>
+          <value>ToGetATreatment,System.Decimal</value>
+          <value>ToSeeADoctor,System.Decimal</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>5cc31a9ea73143299248afe6f9dfb76a</Key>
+        <Name>Smart9</Name>
+        <NameInSource>tears</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from Smart9</SqlCommand>
+      </Smart9>
+      <smart1 Ref="6" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>smart1</Alias>
+        <Columns isList="true" count="6">
+          <value>NumberOfVisitors_x0028_Patients_x0029_,System.Decimal</value>
+          <value>NumberOfVisitors_x0028_Patients_x0029_WhoLeaveWithoutBeingSeen,System.Decimal</value>
+          <value>PatientWaitTimesByProcessStep_x0028_Min_x0029_,System.Decimal</value>
+          <value>TimeBetweenSymptomOnset_x0026_Hospitalization,System.Decimal</value>
+          <value>month,System.String</value>
+          <value>monthid,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>6f605518d4ad424e98ad285dafb7e3c8</Key>
+        <Name>smart1</Name>
+        <NameInSource>tears</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from smart1</SqlCommand>
+      </smart1>
+      <smart3 Ref="7" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>smart3</Alias>
+        <Columns isList="true" count="6">
+          <value>NumberOfPartnershipsWithAdvocacyGroups,System.Decimal</value>
+          <value>PatientConfidentiality,System.Decimal</value>
+          <value>RateOfMistakeEvents,System.Decimal</value>
+          <value>TrainingsPerDepartment_x0028_hours_x0029_,System.Decimal</value>
+          <value>month,System.String</value>
+          <value>monthid,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>e6c326f7e6f648aeb336371a37358c16</Key>
+        <Name>smart3</Name>
+        <NameInSource>tears</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from smart3</SqlCommand>
+      </smart3>
+      <smart4 Ref="8" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>smart4</Alias>
+        <Columns isList="true" count="7">
+          <value>AverageNumberOfPatientBeds,System.Decimal</value>
+          <value>BedOrRoomTurnover,System.Decimal</value>
+          <value>PatientWaitTime,System.Decimal</value>
+          <value>RateOfPatientSatisfaction,System.Decimal</value>
+          <value>StaffToPatientRatio,System.Decimal</value>
+          <value>month,System.String</value>
+          <value>monthid,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>719b2a2d94764ec09683ab650a0518d4</Key>
+        <Name>smart4</Name>
+        <NameInSource>tears</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from smart4</SqlCommand>
+      </smart4>
+      <smart5 Ref="9" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>smart5</Alias>
+        <Columns isList="true" count="5">
+          <value>ChildhoodImmunizations,System.Decimal</value>
+          <value>NumberOfEducationalPrograms,System.Decimal</value>
+          <value>NumberOfPretermBirths,System.Decimal</value>
+          <value>month,System.String</value>
+          <value>monthid,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>7b8bc62801a64f5e8f5eb0296ff0ea6e</Key>
+        <Name>smart5</Name>
+        <NameInSource>tears</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from smart5</SqlCommand>
+      </smart5>
+      <smart7 Ref="10" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>smart7</Alias>
+        <Columns isList="true" count="16">
+          <value>Admissions,System.Decimal</value>
+          <value>AverageTreatmentCosts,System.Decimal</value>
+          <value>Days,System.Int64</value>
+          <value>Infections,System.String</value>
+          <value>LengthOfStay,System.Decimal</value>
+          <value>Month,System.String</value>
+          <value>Monthid,System.Int32</value>
+          <value>NurseRatio,System.String</value>
+          <value>NurseType,System.String</value>
+          <value>PatientAge,System.String</value>
+          <value>Payer,System.Decimal</value>
+          <value>PayerID,System.String</value>
+          <value>PercentageOfInfections,System.Decimal</value>
+          <value>Quarter,System.String</value>
+          <value>Readmission,System.Decimal</value>
+          <value>StaysbyPayer,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>825e336c6ca6484cab7c5e85c4f57e40</Key>
+        <Name>smart7</Name>
+        <NameInSource>tears</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from smart7</SqlCommand>
+      </smart7>
+      <smart8 Ref="11" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>smart8</Alias>
+        <Columns isList="true" count="5">
+          <value>Maternal_x0026_Neonatal_x0020_Stays,System.Decimal</value>
+          <value>MedicalStays,System.Decimal</value>
+          <value>PayerID,System.Int64</value>
+          <value>StaysByPayer,System.String</value>
+          <value>SurgicalStays,System.Decimal</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>c69683d59d20491b8f6eb182a81768a1</Key>
+        <Name>smart8</Name>
+        <NameInSource>tears</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from smart8</SqlCommand>
+      </smart8>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>329bf5dcd354496289e2c6f2c58bcec3</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Dashboard1 Ref="12" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
+      <Alias>Hospital Overview</Alias>
+      <BackColor>Transparent</BackColor>
+      <Components isList="true" count="10">
+        <Text1 Ref="13" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>109, 211, 222</ForeColor>
+          <Guid>8c5f1025a5874811b96b60648bc94737</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text1</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="48"&gt;&lt;text-align="Center"&gt;&lt;b&gt;HOSPITAL OVERVIEW&lt;/b&gt;&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="14" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text1>
+        <Indicator1 Ref="15" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,200,180,100</ClientRectangle>
+          <CustomStyleName>Indicator2</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>c2f5a4c45ff346dd938ca605fe03624c</Guid>
+          <Icon>ManWoman</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator1</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <Style>Custom</Style>
+          <TextFormat Ref="16" type="NumberFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>Abbreviation</State>
+          </TextFormat>
+          <Title Ref="17" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>64, 64, 64</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Total Patients</Text>
+          </Title>
+          <TopN Ref="18" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="19" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(Smart6.Patients)</Expression>
+            <Key>44452ed7cbbd49a4b34b7dd92e002668</Key>
+            <Label>Patients</Label>
+          </Value>
+        </Indicator1>
+        <Indicator4 Ref="20" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,300,180,100</ClientRectangle>
+          <CustomStyleName>Indicator3</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>f43ca05865ef4e97988a854c40977242</Guid>
+          <Icon>Users</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator4</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <Style>Custom</Style>
+          <TextFormat Ref="21" type="NumberFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>Abbreviation</State>
+          </TextFormat>
+          <Title Ref="22" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>64, 64, 64</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Total Patients Admitted</Text>
+          </Title>
+          <TopN Ref="23" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="24" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(Smart6.PatientsAdmitted)</Expression>
+            <Key>9e59417c4a134ddc9ce257dbe76b0cc0</Key>
+            <Label>PatientsAdmitted</Label>
+          </Value>
+        </Indicator4>
+        <Indicator3 Ref="25" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,400,180,100</ClientRectangle>
+          <CustomStyleName>Indicator4</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>ff51453366de40c0b7c0c1174b0d3a5c</Guid>
+          <Icon>Usd</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator3</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <Style>Custom</Style>
+          <TextFormat Ref="26" type="CurrencyFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>0</NegativePattern>
+            <PositivePattern>0</PositivePattern>
+            <State>Abbreviation</State>
+          </TextFormat>
+          <Title Ref="27" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>64, 64, 64</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Average Treatment Costs</Text>
+          </Title>
+          <TopN Ref="28" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="29" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(Smart6.AverageTreatmentCosts)</Expression>
+            <Key>c9771f1858e24be8b1bc424ef4346268</Key>
+            <Label>AverageTreatmentCosts</Label>
+          </Value>
+        </Indicator3>
+        <Indicator5 Ref="30" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,500,180,100</ClientRectangle>
+          <CustomStyleName>Indicator1</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>efc7109f37ef423285ec7ef7e212fb5a</Guid>
+          <Icon>UserMd</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator5</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <Style>Custom</Style>
+          <TextFormat Ref="31" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits</State>
+          </TextFormat>
+          <Title Ref="32" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>64, 64, 64</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Average ER Waiting Time</Text>
+          </Title>
+          <TopN Ref="33" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="34" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(Smart6.AverageERWaitingTime)</Expression>
+            <Key>8c181e305b5044719f1dcffac316b7a6</Key>
+            <Label>AverageERWaitingTime</Label>
+          </Value>
+        </Indicator5>
+        <Chart1 Ref="35" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <Area Ref="36" type="Stimulsoft.Dashboard.Components.Chart.StiChartArea" isKey="true">
+            <InterlacingHor Ref="37" type="Stimulsoft.Dashboard.Components.Chart.StiHorChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingHor>
+            <InterlacingVert Ref="38" type="Stimulsoft.Dashboard.Components.Chart.StiVertChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingVert>
+            <XAxis Ref="39" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxis" isKey="true">
+              <Labels Ref="40" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="41" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="42" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </XAxis>
+            <YAxis Ref="43" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxis" isKey="true">
+              <Labels Ref="44" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="45" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="46" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </YAxis>
+          </Area>
+          <Arguments isList="true" count="1">
+            <Item18 Ref="47" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
+              <Expression>Smart6.Month</Expression>
+              <Key>fd6f678028c04c19915dbe853225c63f</Key>
+              <Label>Month</Label>
+            </Item18>
+          </Arguments>
+          <BackColor>Transparent</BackColor>
+          <ChartConditions isList="true" count="0" />
+          <ClientRectangle>180,40,1020,320</ClientRectangle>
+          <CloseValues isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName>Chart</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <EndValues isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>c8b877f237c94c7d8d99283718da7680</Guid>
+          <HighValues isList="true" count="0" />
+          <Labels Ref="48" type="Stimulsoft.Dashboard.Components.Chart.StiChartLabels" isKey="true">
+            <Font>Arial,8</Font>
+            <ForeColor>Transparent</ForeColor>
+          </Labels>
+          <Legend Ref="49" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegend" isKey="true">
+            <Labels Ref="50" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendLabels" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,8</Font>
+            </Labels>
+            <Title Ref="51" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendTitle" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,12,Bold</Font>
+            </Title>
+          </Legend>
+          <LowValues isList="true" count="0" />
+          <ManuallyEnteredChartMeter Ref="52" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            <Key>dc4705d0437c417da7c4c4dee19ed403</Key>
+          </ManuallyEnteredChartMeter>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Marker Ref="53" type="Stimulsoft.Dashboard.Components.Chart.StiChartMarker" isKey="true" />
+          <Name>Chart1</Name>
+          <NegativeSeriesColors />
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <ParetoSeriesColors />
+          <RoundValues>True</RoundValues>
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Title Ref="54" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Chart</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TopN Ref="55" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <TrendLines isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <UserViewStates isList="true" count="0" />
+          <ValueFormat Ref="56" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits, Abbreviation</State>
+          </ValueFormat>
+          <Values isList="true" count="2">
+            <Item19 Ref="57" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(Smart6.Inpatients)</Expression>
+              <Key>fe7688357eba4f55a18af484af4fc486</Key>
+              <Label>Inpatients</Label>
+            </Item19>
+            <Item20 Ref="58" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(Smart6.Outpatients)</Expression>
+              <Key>483350496514459b8c797c1148eb4b7b</Key>
+              <Label>Outpatients</Label>
+            </Item20>
+          </Values>
+          <Weights isList="true" count="0" />
+        </Chart1>
+        <Chart2 Ref="59" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <Area Ref="60" type="Stimulsoft.Dashboard.Components.Chart.StiChartArea" isKey="true">
+            <ColorEach>True</ColorEach>
+            <InterlacingHor Ref="61" type="Stimulsoft.Dashboard.Components.Chart.StiHorChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingHor>
+            <InterlacingVert Ref="62" type="Stimulsoft.Dashboard.Components.Chart.StiVertChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingVert>
+            <XAxis Ref="63" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxis" isKey="true">
+              <Labels Ref="64" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="65" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="66" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </XAxis>
+            <YAxis Ref="67" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxis" isKey="true">
+              <Labels Ref="68" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="69" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="70" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </YAxis>
+          </Area>
+          <Arguments isList="true" count="1">
+            <Item22 Ref="71" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
+              <Expression>Smart6.Division</Expression>
+              <Key>41ed537aa51447f3be1936b11984a83d</Key>
+              <Label>Division</Label>
+            </Item22>
+          </Arguments>
+          <BackColor>Transparent</BackColor>
+          <ChartConditions isList="true" count="0" />
+          <ClientRectangle>700,360,500,240</ClientRectangle>
+          <CloseValues isList="true" count="0" />
+          <ConstantLines isList="true" count="1">
+            <Item23 Ref="72" type="Stimulsoft.Dashboard.Components.Chart.StiChartConstantLines" isKey="true">
+              <AxisValue>42</AxisValue>
+              <LineColor>239, 89, 87</LineColor>
+              <LineStyle>Dash</LineStyle>
+              <LineWidth>2</LineWidth>
+              <Text>42</Text>
+            </Item23>
+          </ConstantLines>
+          <CustomStyleName>Chart</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <EndValues isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>3a1499faee1448099af885ee72342bcb</Guid>
+          <HighValues isList="true" count="0" />
+          <Labels Ref="73" type="Stimulsoft.Dashboard.Components.Chart.StiChartLabels" isKey="true">
+            <Font>Arial,8</Font>
+            <ForeColor>Transparent</ForeColor>
+          </Labels>
+          <Legend Ref="74" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegend" isKey="true">
+            <Labels Ref="75" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendLabels" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,8</Font>
+            </Labels>
+            <Title Ref="76" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendTitle" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,12,Bold</Font>
+            </Title>
+          </Legend>
+          <LowValues isList="true" count="0" />
+          <ManuallyEnteredChartMeter Ref="77" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            <Key>e3bda8caa4764421bb3e418b3959906a</Key>
+          </ManuallyEnteredChartMeter>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Marker Ref="78" type="Stimulsoft.Dashboard.Components.Chart.StiChartMarker" isKey="true" />
+          <Name>Chart2</Name>
+          <NegativeSeriesColors />
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <ParetoSeriesColors />
+          <RoundValues>True</RoundValues>
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Title Ref="79" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Average Waiting Time by Division </Text>
+          </Title>
+          <TopN Ref="80" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <TrendLines isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <UserViewStates isList="true" count="0" />
+          <ValueFormat Ref="81" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits</State>
+          </ValueFormat>
+          <Values isList="true" count="1">
+            <Item24 Ref="82" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(Smart6.AverageERWaitingTime)</Expression>
+              <Key>5391974763ef495ebc80e012ade2e47e</Key>
+              <Label>AverageERWaitingTime</Label>
+              <SeriesType>ClusteredBar</SeriesType>
+            </Item24>
+          </Values>
+          <Weights isList="true" count="0" />
+        </Chart2>
+        <Gauge1 Ref="83" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <CalculationMode>Custom</CalculationMode>
+          <ClientRectangle>180,360,260,240</ClientRectangle>
+          <CustomStyleName>Gauge</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>21b07b1cf1ee4410b46a99dced976eb2</Guid>
+          <Labels Ref="84" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeLabels" isKey="true" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Maximum>30000</Maximum>
+          <MaximumDateTime>5/24/2024 3:24:05 PM</MaximumDateTime>
+          <Minimum>0</Minimum>
+          <MinimumDateTime>5/24/2023 3:24:05 PM</MinimumDateTime>
+          <Name>Gauge1</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <Ranges isList="true" count="3">
+            <Item26 Ref="85" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>255, 130, 124</Color>
+              <Start>66</Start>
+              <StartExpression>66</StartExpression>
+            </Item26>
+            <Item27 Ref="86" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>255, 213, 124</Color>
+              <End>66</End>
+              <EndExpression>66</EndExpression>
+              <Start>33</Start>
+              <StartExpression>33</StartExpression>
+            </Item27>
+            <Item28 Ref="87" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>114, 236, 129</Color>
+              <End>33</End>
+              <EndExpression>33</EndExpression>
+            </Item28>
+          </Ranges>
+          <RangeType>Color</RangeType>
+          <Style>Custom</Style>
+          <TargetSettings Ref="88" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeTarget" isKey="true" />
+          <Title Ref="89" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Total Inpatients</Text>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="90" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
+            <Expression>Sum(Smart6.Inpatients)</Expression>
+            <Key>ed3ef0f63ae04af899a34b5ddc2b9170</Key>
+            <Label>Inpatients</Label>
+          </Value>
+          <ValueFormat Ref="91" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits, Abbreviation</State>
+          </ValueFormat>
+        </Gauge1>
+        <Gauge2 Ref="92" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <CalculationMode>Custom</CalculationMode>
+          <ClientRectangle>440,360,260,240</ClientRectangle>
+          <CustomStyleName>Gauge</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>eab67dd8fd3846258174d00f47ef520d</Guid>
+          <Labels Ref="93" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeLabels" isKey="true" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Maximum>30000</Maximum>
+          <MaximumDateTime>5/24/2024 3:24:05 PM</MaximumDateTime>
+          <Minimum>0</Minimum>
+          <MinimumDateTime>5/24/2023 3:24:05 PM</MinimumDateTime>
+          <Name>Gauge2</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <Ranges isList="true" count="3">
+            <Item30 Ref="94" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>255, 130, 124</Color>
+              <End>25</End>
+              <EndExpression>25</EndExpression>
+            </Item30>
+            <Item31 Ref="95" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>255, 213, 124</Color>
+              <End>75</End>
+              <EndExpression>75</EndExpression>
+              <Start>25</Start>
+              <StartExpression>25</StartExpression>
+            </Item31>
+            <Item32 Ref="96" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>114, 236, 129</Color>
+              <Start>75</Start>
+              <StartExpression>75</StartExpression>
+            </Item32>
+          </Ranges>
+          <RangeType>Color</RangeType>
+          <Style>Custom</Style>
+          <TargetSettings Ref="97" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeTarget" isKey="true" />
+          <Title Ref="98" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Total Outpatients</Text>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="99" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
+            <Expression>Sum(Smart6.Outpatients)</Expression>
+            <Key>c1ecae7be6b34a98a97ca5d9107ce80a</Key>
+            <Label>Outpatients</Label>
+          </Value>
+          <ValueFormat Ref="100" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits, Abbreviation</State>
+          </ValueFormat>
+        </Gauge2>
+        <Panel1 Ref="101" type="Stimulsoft.Dashboard.Components.Panel.StiPanelElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>109, 211, 222</BackColor>
+          <ClientRectangle>0,40,180,160</ClientRectangle>
+          <Components isList="true" count="2">
+            <Shape1 Ref="102" type="Stimulsoft.Dashboard.Components.Shape.StiShapeElement" isKey="true">
+              <AltClientRectangle>0,0,0,0</AltClientRectangle>
+              <BackColor>109, 211, 222</BackColor>
+              <ClientRectangle>40,20,100,80</ClientRectangle>
+              <Expressions isList="true" count="0" />
+              <Fill>White</Fill>
+              <Guid>1766b8813710499ea139e667bf230b75</Guid>
+              <Margin>3,3,3,3</Margin>
+              <Name>Shape1</Name>
+              <Padding>0,0,0,0</Padding>
+              <Page isRef="12" />
+              <Parent isRef="101" />
+              <ShapeType Ref="103" type="Stimulsoft.Report.Components.ShapeTypes.StiPlusShapeType" isKey="true" />
+              <Size>2</Size>
+              <Stroke>White</Stroke>
+              <Title Ref="104" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+                <BackColor>Transparent</BackColor>
+                <Font>Arial,11</Font>
+                <ForeColor>Transparent</ForeColor>
+                <SizeMode>Fit</SizeMode>
+                <Text>Shape</Text>
+                <Visible>False</Visible>
+              </Title>
+            </Shape1>
+            <Text2 Ref="105" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+              <AltClientRectangle>0,0,0,0</AltClientRectangle>
+              <BackColor>109, 211, 222</BackColor>
+              <ClientRectangle>20,100,140,60</ClientRectangle>
+              <Expressions isList="true" count="0" />
+              <ForeColor>Transparent</ForeColor>
+              <Guid>08f8cfb78e404ce69c1946cb27a9634c</Guid>
+              <Margin>3,3,3,3</Margin>
+              <Name>Text2</Name>
+              <Padding>0,0,0,0</Padding>
+              <Page isRef="12" />
+              <Parent isRef="101" />
+              <SizeMode>Fit</SizeMode>
+              <Text>&lt;font face="Arial" size="28"&gt;&lt;text-align="Center"&gt;&lt;b&gt;&lt;font-color="White"&gt;Central Hospital&lt;/font-color&gt;&lt;/b&gt;&lt;/text-align&gt;&lt;/font&gt;</Text>
+              <Title Ref="106" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+                <BackColor>Transparent</BackColor>
+                <Font>Arial,11</Font>
+                <ForeColor>Transparent</ForeColor>
+                <SizeMode>Fit</SizeMode>
+                <Text>Text</Text>
+                <Visible>False</Visible>
+              </Title>
+            </Text2>
+          </Components>
+          <DashboardWatermark Ref="107" type="Stimulsoft.Base.Drawing.StiAdvancedWatermark" isKey="true">
+            <TextColor>Gray</TextColor>
+            <TextFont>Arial,36</TextFont>
+            <WeaveMajorColor>119, 119, 119, 119</WeaveMajorColor>
+            <WeaveMinorColor>85, 119, 119, 119</WeaveMinorColor>
+          </DashboardWatermark>
+          <Expressions isList="true" count="0" />
+          <Guid>ea5adc954f614a6880e1417cc92155e1</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Panel1</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+        </Panel1>
+      </Components>
+      <DashboardWatermark Ref="108" type="Stimulsoft.Base.Drawing.StiAdvancedWatermark" isKey="true">
+        <TextColor>Gray</TextColor>
+        <TextFont>Arial,36</TextFont>
+        <WeaveMajorColor>119, 119, 119, 119</WeaveMajorColor>
+        <WeaveMinorColor>85, 119, 119, 119</WeaveMinorColor>
+      </DashboardWatermark>
+      <Expressions isList="true" count="0" />
+      <Guid>b67aa9739ba04d89811283231ddaaf2b</Guid>
+      <Name>Dashboard1</Name>
+      <Report isRef="0" />
+      <Style>Turquoise</Style>
+    </Dashboard1>
+  </Pages>
+  <PreviewSettings>25108991</PreviewSettings>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>DashboardHospitalOverview</ReportAlias>
+  <ReportAuthor>Stimulsoft</ReportAuthor>
+  <ReportChanged>5/31/2023 8:12:46 PM</ReportChanged>
+  <ReportCreated>8/19/2019 1:57:16 PM</ReportCreated>
+  <ReportFile>C:\Users\HP\Downloads\dashboard\Samples-Dashboards-ASP.NET-6.0-MVC-master\Web Demo\Dashboards/DashboardHospitalOverview.mrt</ReportFile>
+  <ReportGuid>711194b1945a46758bdb7990460e9461</ReportGuid>
+  <ReportName>DashboardHospitalOverview</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2023.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class DashboardHospitalOverview : Stimulsoft.Report.StiReport
+    {
+        public DashboardHospitalOverview()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="6">
+    <Gauge Ref="109" type="Stimulsoft.Report.StiGaugeStyle" isKey="true">
+      <BorderColor>Transparent</BorderColor>
+      <Brush>[255:255:255]</Brush>
+      <Conditions isList="true" count="0" />
+      <ForeColor>DimGray</ForeColor>
+      <LinearBarBorderBrush>EmptyBrush</LinearBarBorderBrush>
+      <LinearBarBrush>[46:198:200]</LinearBarBrush>
+      <LinearBarEmptyBorderBrush>EmptyBrush</LinearBarEmptyBorderBrush>
+      <LinearBarEmptyBrush>EmptyBrush</LinearBarEmptyBrush>
+      <LinearScaleBrush>[112:173:71]</LinearScaleBrush>
+      <MarkerBrush>[136:136:136]</MarkerBrush>
+      <Name>Gauge</Name>
+      <NeedleBorderBrush>EmptyBrush</NeedleBorderBrush>
+      <NeedleBorderWidth>1</NeedleBorderWidth>
+      <NeedleBrush>[109:211:222]</NeedleBrush>
+      <NeedleCapBorderBrush>[109:211:222]</NeedleCapBorderBrush>
+      <NeedleCapBrush>[109:211:222]</NeedleCapBrush>
+      <RadialBarBorderBrush>EmptyBrush</RadialBarBorderBrush>
+      <RadialBarBrush>[109:211:222]</RadialBarBrush>
+      <RadialBarEmptyBorderBrush>EmptyBrush</RadialBarEmptyBorderBrush>
+      <RadialBarEmptyBrush>Gainsboro</RadialBarEmptyBrush>
+      <TargetColor>Black</TargetColor>
+      <TickLabelMajorFont>Arial,10</TickLabelMajorFont>
+      <TickLabelMajorTextBrush>[140:140:140]</TickLabelMajorTextBrush>
+      <TickLabelMinorFont>Arial,9</TickLabelMinorFont>
+      <TickLabelMinorTextBrush>[140:140:140]</TickLabelMinorTextBrush>
+      <TickMarkMajorBorder>EmptyBrush</TickMarkMajorBorder>
+      <TickMarkMajorBorderWidth>1</TickMarkMajorBorderWidth>
+      <TickMarkMajorBrush>EmptyBrush</TickMarkMajorBrush>
+      <TickMarkMinorBorder>EmptyBrush</TickMarkMinorBorder>
+      <TickMarkMinorBorderWidth>1</TickMarkMinorBorderWidth>
+      <TickMarkMinorBrush>[140:140:140]</TickMarkMinorBrush>
+    </Gauge>
+    <Chart Ref="110" type="Stimulsoft.Report.StiChartStyle" isKey="true">
+      <AxisLabelsColor>140, 140, 140</AxisLabelsColor>
+      <AxisLineColor>140, 140, 140</AxisLineColor>
+      <AxisTitleColor>140, 140, 140</AxisTitleColor>
+      <BasicStyleColor>White</BasicStyleColor>
+      <Brush>White</Brush>
+      <ChartAreaBorderColor>Transparent</ChartAreaBorderColor>
+      <ChartAreaBrush>[255:255:255]</ChartAreaBrush>
+      <Conditions isList="true" count="0" />
+      <GridLinesHorColor>50, 105, 105, 105</GridLinesHorColor>
+      <GridLinesVertColor>50, 105, 105, 105</GridLinesVertColor>
+      <InterlacingHorBrush>[10:155:155:155]</InterlacingHorBrush>
+      <InterlacingVertBrush>[10:155:155:155]</InterlacingVertBrush>
+      <LegendBorderColor>Transparent</LegendBorderColor>
+      <LegendBrush>[255:255:255]</LegendBrush>
+      <LegendLabelsColor>140, 140, 140</LegendLabelsColor>
+      <LegendTitleColor>DimGray</LegendTitleColor>
+      <MarkerVisible>False</MarkerVisible>
+      <Name>Chart</Name>
+      <SeriesBorderColor>Transparent</SeriesBorderColor>
+      <SeriesLabelsBorderColor>Transparent</SeriesLabelsBorderColor>
+      <SeriesLabelsBrush>Transparent</SeriesLabelsBrush>
+      <SeriesLabelsColor>51, 71, 91</SeriesLabelsColor>
+      <SeriesLabelsLineColor>DimGray</SeriesLabelsLineColor>
+      <StyleColors>[109:212:222], [255:185:124], [123:151:227], [255:130:124], [114:236:129], [215:122:128]</StyleColors>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+      <TrendLineColor>DimGray</TrendLineColor>
+    </Chart>
+    <Indicator1 Ref="111" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>White</BackColor>
+      <Conditions isList="true" count="0" />
+      <ForeColor>88, 88, 87</ForeColor>
+      <GlyphColor>28, 187, 182</GlyphColor>
+      <HotBackColor>ButtonFace</HotBackColor>
+      <Name>Indicator1</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Indicator1>
+    <Indicator2 Ref="112" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>White</BackColor>
+      <Conditions isList="true" count="0" />
+      <ForeColor>88, 88, 87</ForeColor>
+      <GlyphColor>123, 151, 227</GlyphColor>
+      <HotBackColor>ButtonFace</HotBackColor>
+      <Name>Indicator2</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Indicator2>
+    <Indicator3 Ref="113" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>White</BackColor>
+      <Conditions isList="true" count="0" />
+      <ForeColor>88, 88, 87</ForeColor>
+      <GlyphColor>255, 185, 124</GlyphColor>
+      <HotBackColor>ButtonFace</HotBackColor>
+      <Name>Indicator3</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Indicator3>
+    <Indicator4 Ref="114" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>White</BackColor>
+      <Conditions isList="true" count="0" />
+      <ForeColor>88, 88, 87</ForeColor>
+      <GlyphColor>255, 130, 124</GlyphColor>
+      <HotBackColor>ButtonFace</HotBackColor>
+      <Name>Indicator4</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Indicator4>
+  </Styles>
+</StiSerializer>

@@ -1,34 +1,3 @@
-import { Component, ElementRef, EventEmitter, Injector, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { AppComponentBase } from '@shared/common/app-component-base';
-import { ComboboxItemDto, EditionServiceProxy } from '@shared/service-proxies/service-proxies';
-
-@Component({
-    selector: 'edition-combo',
-    template: `
-        <select
-            #EditionCombobox
-            class="form-select"
-            [(ngModel)]="selectedEdition"
-            (ngModelChange)="selectedEditionChange.emit($event)"
-        >
-            <option *ngFor="let edition of editions" [value]="edition.value">{{ edition.displayText }}</option>
-        </select>
-    `,
-})
-export class EditionComboComponent extends AppComponentBase implements OnInit {
-    @ViewChild('EditionCombobox', { static: true }) editionComboboxElement: ElementRef;
-    @Input() selectedEdition: string = undefined;
-    @Output() selectedEditionChange: EventEmitter<string> = new EventEmitter<string>();
-
-    editions: ComboboxItemDto[] = [];
-
-    constructor(private _editionService: EditionServiceProxy, injector: Injector) {
-        super(injector);
-    }
-
-    ngOnInit(): void {
-        this._editionService.getEditionComboboxItems(0, true, false).subscribe((editions) => {
-            this.editions = editions;
-        });
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:86743ac6e3a9a2e956a2a281aacee51d0ea8f24e0ce410a60c45495f62d618e6
+size 1312

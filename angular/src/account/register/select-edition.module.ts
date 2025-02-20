@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { SelectEditionRoutingModule } from './select-edition-routing.module';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-import { SelectEditionComponent } from './select-edition.component';
-
-@NgModule({
-    declarations: [SelectEditionComponent],
-    imports: [AppSharedModule, AccountSharedModule, SelectEditionRoutingModule],
-})
-export class SelectEditionModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d9928dcc86cd723af375ab70468cef529fa8cae1cce4af272f629132c04c714
+size 508

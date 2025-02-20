@@ -1,10 +1,3 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { SubHeaderComponent } from './sub-header.component';
-
-@NgModule({
-    imports: [CommonModule],
-    declarations: [SubHeaderComponent],
-    exports: [SubHeaderComponent],
-})
-export class SubheaderModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d343818b17ba0bba68411258410101f5de7bd77d7e119f77beebafcb60528608
+size 303

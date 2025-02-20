@@ -1,17 +1,3 @@
-import { Injector, Pipe, PipeTransform } from '@angular/core';
-import { FeatureCheckerService } from 'abp-ng2-module';
-
-@Pipe({
-    name: 'checkFeature',
-})
-export class FeatureCheckerPipe implements PipeTransform {
-    featureCheckerService: FeatureCheckerService;
-
-    constructor(injector: Injector) {
-        this.featureCheckerService = injector.get(FeatureCheckerService);
-    }
-
-    transform(feature: string): boolean {
-        return this.featureCheckerService.isEnabled(feature);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b98dbb660e6ace79f5781d28ccea9995728244da953248a24ecd211015aa41b
+size 498

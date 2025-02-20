@@ -1,11 +1,3 @@
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { ConfirmEmailRoutingModule } from './confirm-email-routing.module';
-import { ConfirmEmailComponent } from './confirm-email.component';
-
-@NgModule({
-    declarations: [ConfirmEmailComponent],
-    imports: [AppSharedModule, AccountSharedModule, ConfirmEmailRoutingModule],
-})
-export class EmailConfirmModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:397a3689857451f445269e3f244038e4839048f08b8450e81d46091766f95aec
+size 501

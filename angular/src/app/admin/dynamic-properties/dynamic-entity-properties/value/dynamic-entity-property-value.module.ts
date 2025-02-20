@@ -1,14 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { DynamicEntityPropertyValueRoutingModule } from './dynamic-entity-property-value-routing.module';
-import { ManageValuesModalComponent } from './manage-values-modal.component';
-import { DynamicEntityPropertyValueComponent } from './dynamic-entity-property-value.component';
-import { ManagerComponent } from './manager.component';
-
-@NgModule({
-    declarations: [ManageValuesModalComponent, DynamicEntityPropertyValueComponent, ManagerComponent],
-    imports: [AppSharedModule, AdminSharedModule, DynamicEntityPropertyValueRoutingModule],
-    exports: [ManageValuesModalComponent, ManagerComponent],
-})
-export class DynamicEntityPropertyValueModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5486a1670b78bb24a2611c8bfb6b5897e25af30b8741256b6b7ee7f404adc8bf
+size 840

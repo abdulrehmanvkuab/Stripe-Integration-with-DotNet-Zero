@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Arch</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="delete\**" />
+    <EmbeddedResource Remove="delete\**" />
+    <None Remove="delete\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Web.Common" Version="9.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arch.Core.Shared\Arch.Core.Shared.csproj" />
+  </ItemGroup>
+</Project>

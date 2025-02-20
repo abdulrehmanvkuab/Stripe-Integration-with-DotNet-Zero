@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { ForgotPasswordRoutingModule } from './forgot-password-routing.module';
-import { ForgotPasswordComponent } from './forgot-password.component';
-
-@NgModule({
-    declarations: [ForgotPasswordComponent],
-    imports: [AppSharedModule, AdminSharedModule, ForgotPasswordRoutingModule],
-})
-export class ForgotPasswordModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d93f41c2cf08c6f445e2bedf7549ae633445b8bc21ba0274f732d64f3471c27f
+size 511

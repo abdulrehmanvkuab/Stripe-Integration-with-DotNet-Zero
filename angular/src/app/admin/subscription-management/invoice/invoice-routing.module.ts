@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { InvoiceComponent } from './invoice.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: InvoiceComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class InvoiceRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ba13eb1cb833f326b5aa25e5938bb06b335689db07116f038175fc1c04e4352b
+size 406

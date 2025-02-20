@@ -1,19 +1,3 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-
-@Component({
-    selector: 'password-input-with-show-button',
-    templateUrl: './password-input-with-show-button.component.html',
-})
-export class PasswordInputWithShowButtonComponent {
-    @Input() data: string;
-    @Output() dataChange = new EventEmitter();
-    isVisible = false;
-
-    toggleVisibility(): void {
-        this.isVisible = !this.isVisible;
-    }
-
-    onChange() {
-        this.dataChange.emit(this.data);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b538fe56588b6fba11929e0908b1fa08ac4d1058eaac6b6d45186cb9410e596
+size 511

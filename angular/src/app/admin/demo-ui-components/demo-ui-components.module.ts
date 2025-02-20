@@ -1,23 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { DemoUIComponentsRoutingModule } from './demo-ui-components-routing.module';
-import { DemoUiComponentsComponent } from './demo-ui-components.component';
-import { DemoUiSelectionComponent } from './demo-ui-selection.component';
-import { DemoUiInputMaskComponent } from './demo-ui-input-mask.component';
-import { DemoUiFileUploadComponent } from './demo-ui-file-upload.component';
-import { DemoUiEditorComponent } from './demo-ui-editor.component';
-import { DemoUiDateTimeComponent } from './demo-ui-date-time.component';
-
-@NgModule({
-    declarations: [
-        DemoUiComponentsComponent,
-        DemoUiSelectionComponent,
-        DemoUiInputMaskComponent,
-        DemoUiFileUploadComponent,
-        DemoUiEditorComponent,
-        DemoUiDateTimeComponent,
-    ],
-    imports: [AppSharedModule, AdminSharedModule, DemoUIComponentsRoutingModule],
-})
-export class DemoUIComponentsModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2683f1810b655bd7fd90d26c7fd8776554a155600ac77e926a834f86f1fc7ed
+size 1076

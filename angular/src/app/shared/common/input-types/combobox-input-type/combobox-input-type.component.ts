@@ -1,26 +1,3 @@
-import { Component, OnInit, Injector } from '@angular/core';
-import { InputTypeComponentBase } from '../input-type-component-base';
-
-@Component({
-    selector: 'app-combobox-input-type',
-    templateUrl: './combobox-input-type.component.html',
-    styleUrls: ['./combobox-input-type.component.css'],
-})
-export class ComboboxInputTypeComponent extends InputTypeComponentBase implements OnInit {
-    selectedValue: string;
-
-    constructor(injector: Injector) {
-        super(injector);
-    }
-
-    ngOnInit() {
-        this.selectedValue = this.selectedValues[0];
-    }
-
-    getSelectedValues(): string[] {
-        if (!this.selectedValue) {
-            return [];
-        }
-        return [this.selectedValue];
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fb333e0f1e681a2830d35a3e3795bc5d735a371f3790b4bb5e78da16d81c9ca2
+size 718

@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { LoginAttemptsComponent } from './login-attempts.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: LoginAttemptsComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class LoginAttemptsRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:35bae2111937b9df65c0ca0b62acedb88b191ce1d413b0f2034b49886af14d65
+size 431

@@ -1,14 +1,3 @@
-import { NgControl } from '@angular/forms';
-import { Directive, ElementRef, HostListener } from '@angular/core';
-
-@Directive({
-    selector: 'input[nullValue]',
-})
-export class NullDefaultValueDirective {
-    constructor(private el: ElementRef, private control: NgControl) {}
-
-    @HostListener('input', ['$event.target'])
-    onEvent(target: HTMLInputElement) {
-        this.control.viewToModelUpdate(target.value === '' ? null : target.value);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:691b24c5c6ece897851d0d818e65755a2955ff1a0a9798e6a32f8e4c4add1596
+size 454

@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { TenantSettingsComponent } from '@app/admin/settings/tenant-settings.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: TenantSettingsComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class TenantSettingsRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:665734ae84f5d6e27b2d15655b70e3960f472491b9cab2087b3787a4d0804c5d
+size 453

@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { StripePrePaymentComponent } from './stripe-pre-payment.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: StripePrePaymentComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class StripePrePaymentRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:59508374615508c6fd5036ac3354f8fbdc075c3cab95b881694193e08d6f2a8f
+size 444

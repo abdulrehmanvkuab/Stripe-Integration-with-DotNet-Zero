@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { WebhookSubscriptionDetailComponent } from './webhook-subscription-detail.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: WebhookSubscriptionDetailComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class WebhookSubscriptionDetailRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6ad363e7389adbb0bcda201ec909ccac83d3dafc6692717543f8dac1b2abebb6
+size 480

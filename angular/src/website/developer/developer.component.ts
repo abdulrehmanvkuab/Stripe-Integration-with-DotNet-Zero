@@ -1,35 +1,3 @@
-import { AbpSessionService } from 'abp-ng2-module';
-import { AfterViewInit, Component, Injector, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { accountModuleAnimation } from '@shared/animations/routerTransition';
-import { AppComponentBase } from '@shared/common/app-component-base';
-
-
-@Component({
-    templateUrl: './developer.component.html',
-    animations: [accountModuleAnimation()],
-    styleUrls: ['./developer.component.less'],
-})
-export class DeveloperComponent extends AppComponentBase implements OnInit, AfterViewInit {
-    submitting = false;
-    isMultiTenancyEnabled: boolean = this.multiTenancy.isEnabled;
-
-    constructor(
-        injector: Injector,
-     
-    ) {
-        super(injector);
-    }
-
-   
-
-    ngOnInit(): void {
-       
-    }
-
-    ngAfterViewInit(): void {
-      
-    }
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:16618659003752db71963381d662706175207200540f4a6535a51233cedbdcfb
+size 838

@@ -1,12 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { LanguageTextsComponent } from './language-texts.component';
-import { EditTextModalComponent } from './edit-text-modal.component';
-import { LanguageTextsRoutingModules } from './language-texts-routing-modules.module';
-
-@NgModule({
-    declarations: [LanguageTextsComponent, EditTextModalComponent],
-    imports: [AppSharedModule, AdminSharedModule, LanguageTextsRoutingModules],
-})
-export class LanguageTextsModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd383b54ca0ab221e9a9c8194a36ffc2005e0f32083d0a4284146f505518e1b1
+size 608

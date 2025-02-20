@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { PaypalPrePaymentRoutingModule } from './paypal-pre-payment-routing.module';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-import { PayPalPrePaymentComponent } from './paypal-pre-payment.component';
-
-@NgModule({
-    declarations: [PayPalPrePaymentComponent],
-    imports: [AppSharedModule, AccountSharedModule, PaypalPrePaymentRoutingModule],
-})
-export class PaypalPrePaymentModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1ef8c41ae6f57f5ee408a2c0bdb2ff547f339cd3e5a6aad9463fedcf09c63443
+size 531

@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ManageDynamicEntityPropertyModalComponent } from './manage-dynamic-entity-property-modal.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: ManageDynamicEntityPropertyModalComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class DynamicEntityPropertiesRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1f5d61611aaabd706709f38481feca55414ad8af0a99bc55b47e846eb184a935
+size 501

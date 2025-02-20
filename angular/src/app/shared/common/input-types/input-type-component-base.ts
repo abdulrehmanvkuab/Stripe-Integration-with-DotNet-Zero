@@ -1,17 +1,3 @@
-import { AppComponentBase } from '@shared/common/app-component-base';
-import { Injector } from '@angular/core';
-import { SelectedValuesOptions, AllValuesOptions, ComponentInstanceOptions } from './InputTypeConsts';
-
-export abstract class InputTypeComponentBase extends AppComponentBase {
-    selectedValues: string[];
-    allValues: string[];
-
-    constructor(injector: Injector) {
-        super(injector);
-        this.selectedValues = injector.get<string[]>(SelectedValuesOptions);
-        this.allValues = injector.get<string[]>(AllValuesOptions);
-        (injector.get(ComponentInstanceOptions) as any)(this);
-    }
-
-    abstract getSelectedValues(): string[];
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:89f5518693b43420e49654cad882042ee1cc9fd15c0fd101c61976f8458e65eb
+size 667

@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ResetPasswordComponent } from './reset-password.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: ResetPasswordComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class ResetPasswordRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cacb36894f2adef5216b17c9c86eeb4070709358f595a74f5dfa1ae33e960213
+size 431

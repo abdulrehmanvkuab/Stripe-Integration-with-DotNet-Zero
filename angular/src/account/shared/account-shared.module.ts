@@ -1,11 +1,3 @@
-﻿import { NgModule } from '@angular/core';
-import { TenantChangeComponent } from '@account/shared/tenant-change.component';
-import { TenantChangeModalComponent } from '@account/shared/tenant-change-modal.component';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-
-@NgModule({
-    imports: [AppSharedModule],
-    declarations: [TenantChangeComponent, TenantChangeModalComponent],
-    exports: [TenantChangeComponent, TenantChangeModalComponent],
-})
-export class AccountSharedModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ee3867539939c4ddd55a1c780370ff329d652d8f0400bbc747ebc3e9d31543c
+size 504

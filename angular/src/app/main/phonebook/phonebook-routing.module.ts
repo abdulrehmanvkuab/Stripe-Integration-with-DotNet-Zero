@@ -1,15 +1,3 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {PhoneBookComponent} from './phonebook.component';
-
-const routes: Routes = [{
-    path: '',
-    component: PhoneBookComponent,
-    pathMatch: 'full'
-}];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class PhoneBookRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ba1056a76e8481199a25c444335ecd6735bcc465dab0c350f2efce3e6286deb
+size 399

@@ -1,21 +1,3 @@
-export class HtmlHelper {
-    static encodeText(value: string): string {
-        let div = document.createElement('div');
-        div['textContent' in div ? 'textContent' : 'innerText'] = value;
-        return div.innerHTML;
-    }
-
-    static decodeText(value: string): string {
-        let div = document.createElement('div') as any;
-        div.innerHTML = value;
-        return 'textContent' in div ? div.textContent : div.innerText;
-    }
-
-    static encodeJson(jsonObject: object): string {
-        return JSON.parse(this.encodeText(JSON.stringify(jsonObject)));
-    }
-
-    static decodeJson(jsonObject: object): string {
-        return JSON.parse(this.decodeText(JSON.stringify(jsonObject)));
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9976d57c03e8b9a5974c17d03ccc0a8e9172665b8075460cf4d554ba46c71d1
+size 707

@@ -1,21 +1,3 @@
-import { Injector, Component, ViewEncapsulation, Inject, OnInit } from '@angular/core';
-import { AppConsts } from '@shared/AppConsts';
-import { AppComponentBase } from '@shared/common/app-component-base';
-import { DOCUMENT } from '@angular/common';
-
-@Component({
-    templateUrl: './default-brand.component.html',
-    selector: 'default-brand',
-    encapsulation: ViewEncapsulation.None,
-})
-export class DefaultBrandComponent extends AppComponentBase {
-    remoteServiceBaseUrl: string = AppConsts.remoteServiceBaseUrl;
-
-    constructor(injector: Injector, @Inject(DOCUMENT) private document: Document) {
-        super(injector);
-    }
-
-    getMenuSkin(): string {
-        return this.appSession.theme.baseSettings.layout.darkMode || this.appSession.theme.baseSettings.menu.asideSkin === 'dark' ? 'dark' : 'light';
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6fde55803b2d53e7d0a843b8625a30c3847e59d5a009477f4d0cb7f7d5d46380
+size 823

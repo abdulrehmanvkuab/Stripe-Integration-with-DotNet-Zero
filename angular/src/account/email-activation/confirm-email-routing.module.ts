@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ConfirmEmailComponent } from './confirm-email.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: ConfirmEmailComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class ConfirmEmailRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:214ee19e36678f5377e76204827e3c6919987eca51edca5b1ef68c379210a31f
+size 427

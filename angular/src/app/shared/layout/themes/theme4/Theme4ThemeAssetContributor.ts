@@ -1,29 +1,3 @@
-import { IThemeAssetContributor } from '../ThemeAssetContributor';
-import { AppConsts } from '@shared/AppConsts';
-import { NameValuePair } from '@shared/utils/name-value-pair';
-
-export class Theme4ThemeAssetContributor implements IThemeAssetContributor {
-    public getAssetUrls(): string[] {
-        return [AppConsts.appBaseUrl + '/assets/fonts/fonts-poppins.min.css'];
-    }
-
-    public getMenuWrapperStyle(): string {
-        return 'header-menu-wrapper header-menu-wrapper-left';
-    }
-
-    public getSubheaderStyle(): string {
-        return 'text-dark fw-bold my-1 me-5';
-    }
-
-    public getFooterStyle(): string {
-        return 'footer bg-white py-4 d-flex flex-lg-column mt-5';
-    }
-
-    getBodyAttributes(): NameValuePair[] {
-        return [];
-    }
-
-    getAppModuleBodyClass(): string {
-        return 'header-fixed header-tablet-and-mobile-fixed aside-fixed aside-secondary-disabled';
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a56d46a0c9a1e2f97619652ef3601d3636ce5bfb5dcdd5fb1bd65d6de8a0be6
+size 911

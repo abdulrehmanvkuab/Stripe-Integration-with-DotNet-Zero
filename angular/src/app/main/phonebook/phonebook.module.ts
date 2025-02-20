@@ -1,10 +1,3 @@
-import {NgModule} from '@angular/core';
-import {AppSharedModule} from '@app/shared/app-shared.module';
-import {PhoneBookRoutingModule} from './phonebook-routing.module';
-import {PhoneBookComponent} from './phonebook.component';
-
-@NgModule({
-    declarations: [PhoneBookComponent],
-    imports: [AppSharedModule, PhoneBookRoutingModule]
-})
-export class PhoneBookModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:daae145acd4e74247687acf77b7253c69c07001fbef3d1843ef2f216491cbb9c
+size 381

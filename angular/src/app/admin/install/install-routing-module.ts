@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { InstallComponent } from './install.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: InstallComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class InstallRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6f27b433ac069c2b52708e824e3c7a88117d4bb24bfcd8de2852b46250c68dfc
+size 406

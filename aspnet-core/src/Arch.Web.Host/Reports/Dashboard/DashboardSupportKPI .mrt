@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <supportkpi Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>supportkpi</Alias>
+        <ConnectionStringEncrypted>usjV601Ka6ToWs2c6hikL7pu0QLJBfqZ8UmxhOBcpKeNYM/LT0rzxUZRpYDDGGE/w3D7y05bW7z5ItXcYygiF5BYy8LNbCLp7Vw5hGq4o2fVWPcJx0oimexaOYRiSeg/xHjPycl5S91qR/1AYWjlL8NWzQlLV3Pd4lxAgGFJdyM=</ConnectionStringEncrypted>
+        <Name>supportkpi</Name>
+      </supportkpi>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <CRM_HELPDESK Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>CRM_HELPDESK</Alias>
+        <Columns isList="true" count="15">
+          <value>CaseID,System.String</value>
+          <value>In_progress,System.Int32</value>
+          <value>In_x0020_Review,System.Int32</value>
+          <value>Resolved,System.Int32</value>
+          <value>Engaged,System.Int32</value>
+          <value>Not_x0020_Reviewed,System.Int32</value>
+          <value>DisEngaged,System.Int32</value>
+          <value>SupportKeywords,System.String</value>
+          <value>SupportVersion,System.String</value>
+          <value>SupportPriority,System.Byte</value>
+          <value>CustomerID,System.String</value>
+          <value>SupportStatus,System.String</value>
+          <value>ORIGINAL,ProductId,ProductId,ProductId,System.String,e098a54561d8489fb9d27cd807caa94b</value>
+          <value>SupportTimeSpentFixing,System.Decimal</value>
+          <value>SupportApprovedBy,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>ce8759d81da9480c9a32d320c98b4a19</Key>
+        <Name>CRM_HELPDESK</Name>
+        <NameInSource>supportkpi</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from CRM_HELPDESK</SqlCommand>
+      </CRM_HELPDESK>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>2e9db58fa88f4444a94a26572deaf8a5</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Dashboard1 Ref="4" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
+      <BackColor>Transparent</BackColor>
+      <Components isList="true" count="12">
+        <Text1 Ref="5" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>42, 42, 42</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>White</ForeColor>
+          <Guid>19ce954b7c5240828ee9e435630bcc84</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text1</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="36"&gt;&lt;text-align="Center"&gt;Support Dashboard&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="6" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text1>
+        <Indicator1 Ref="7" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,180,300,140</ClientRectangle>
+          <CustomStyleName>Indicator</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>6621cdebf6df432ab7db111fb669ec0b</Guid>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Series Ref="8" type="Stimulsoft.Dashboard.Components.Indicator.StiSeriesIndicatorMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>16b9bd92f511422c8cbfbdafb90c5c72</Key>
+            <Label>ProductId</Label>
+          </Series>
+          <Style>Custom</Style>
+          <Title Ref="9" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>White</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>In progress</Text>
+          </Title>
+          <TopN Ref="10" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="11" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(CRM_HELPDESK.In_progress)</Expression>
+            <Key>fa08356ecc5348008d9a6bfa2975dfe0</Key>
+            <Label>In_progress</Label>
+          </Value>
+        </Indicator1>
+        <Gauge1 Ref="12" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <CalculationMode>Custom</CalculationMode>
+          <ClientRectangle>900,80,300,240</ClientRectangle>
+          <CustomStyleName>Gauge</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>2aed20ea583841ccbb899f1a97f8f391</Guid>
+          <Labels Ref="13" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeLabels" isKey="true" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Maximum>10</Maximum>
+          <MaximumDateTime>5/24/2024 3:07:16 AM</MaximumDateTime>
+          <Minimum>0</Minimum>
+          <MinimumDateTime>5/24/2023 3:07:16 AM</MinimumDateTime>
+          <Name>Gauge1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <RangeMode>Value</RangeMode>
+          <Ranges isList="true" count="3">
+            <Item7 Ref="14" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>141, 194, 99</Color>
+              <End>3</End>
+              <EndExpression>3</EndExpression>
+            </Item7>
+            <Item8 Ref="15" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>255, 221, 206</Color>
+              <End>7</End>
+              <EndExpression>7</EndExpression>
+              <Start>3</Start>
+              <StartExpression>3</StartExpression>
+            </Item8>
+            <Item9 Ref="16" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>159, 55, 85</Color>
+              <End>10</End>
+              <EndExpression>10</EndExpression>
+              <Start>7</Start>
+              <StartExpression>7</StartExpression>
+            </Item9>
+          </Ranges>
+          <RangeType>Color</RangeType>
+          <Series Ref="17" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>03e6bc49f59446bfa467374a3f686d64</Key>
+            <Label>ProductId</Label>
+          </Series>
+          <Style>Custom</Style>
+          <Target Ref="18" type="Stimulsoft.Dashboard.Components.Gauge.StiTargetGaugeMeter" isKey="true">
+            <Expression>Count(CRM_HELPDESK.SupportPriority)</Expression>
+            <Key>64805182365849beb2f9a2699f251cb9</Key>
+            <Label>SupportPriority</Label>
+          </Target>
+          <TargetSettings Ref="19" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeTarget" isKey="true" />
+          <Title Ref="20" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>White</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Call Waiting</Text>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="21" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
+            <Expression>Count(CRM_HELPDESK.SupportStatus)</Expression>
+            <Key>28af308c645a4e2cafb0baf340470cbe</Key>
+            <Label>SupportStatus</Label>
+          </Value>
+          <ValueFormat Ref="22" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits, Abbreviation</State>
+          </ValueFormat>
+        </Gauge1>
+        <Indicator2 Ref="23" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,460,300,140</ClientRectangle>
+          <CustomStyleName>Indicator</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>fdf7c51808aa47bfb4607cd59b9da8a7</Guid>
+          <Icon>ManWoman</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Series Ref="24" type="Stimulsoft.Dashboard.Components.Indicator.StiSeriesIndicatorMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>405b9c2cc09b424285b61d34f4d21726</Key>
+            <Label>ProductId</Label>
+          </Series>
+          <Style>Custom</Style>
+          <Title Ref="25" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>White</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>In review</Text>
+          </Title>
+          <TopN Ref="26" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="27" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(CRM_HELPDESK.InReview)</Expression>
+            <Key>7c90455df514477ab11b7f92723a30b8</Key>
+            <Label>In Review</Label>
+          </Value>
+        </Indicator2>
+        <Indicator3 Ref="28" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>300,460,300,140</ClientRectangle>
+          <CustomStyleName>Indicator</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>ea961f474e1744a29373d5ac3857b643</Guid>
+          <Icon>TriangleUp</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator3</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Series Ref="29" type="Stimulsoft.Dashboard.Components.Indicator.StiSeriesIndicatorMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>1cd7048b28784470868544cd94a4caaa</Key>
+            <Label>ProductId</Label>
+          </Series>
+          <Style>Custom</Style>
+          <TextFormat Ref="30" type="NumberFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+          </TextFormat>
+          <Title Ref="31" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>White</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Engaged</Text>
+          </Title>
+          <TopN Ref="32" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="33" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(CRM_HELPDESK.Engaged)</Expression>
+            <Key>9383458aeac64ca588ab591c2376aa28</Key>
+            <Label>Engaged</Label>
+          </Value>
+        </Indicator3>
+        <Indicator4 Ref="34" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>300,320,300,140</ClientRectangle>
+          <CustomStyleName>Indicator</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>75de68f45681440db5b20c59bfe0ad4e</Guid>
+          <Icon>Mobile</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator4</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Series Ref="35" type="Stimulsoft.Dashboard.Components.Indicator.StiSeriesIndicatorMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>35aab7328fed42038174e9b48c07f620</Key>
+            <Label>ProductId</Label>
+          </Series>
+          <Style>Custom</Style>
+          <Title Ref="36" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>White</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Resolved</Text>
+          </Title>
+          <TopN Ref="37" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="38" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(CRM_HELPDESK.Resolved)</Expression>
+            <Key>5e83c75aa65c454593f94bf8ecbaf534</Key>
+            <Label>Resolved</Label>
+          </Value>
+        </Indicator4>
+        <Chart1 Ref="39" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <Area Ref="40" type="Stimulsoft.Dashboard.Components.Chart.StiChartArea" isKey="true">
+            <InterlacingHor Ref="41" type="Stimulsoft.Dashboard.Components.Chart.StiHorChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingHor>
+            <InterlacingVert Ref="42" type="Stimulsoft.Dashboard.Components.Chart.StiVertChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingVert>
+            <XAxis Ref="43" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxis" isKey="true">
+              <Labels Ref="44" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="45" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="46" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </XAxis>
+          </Area>
+          <Arguments isList="true" count="1">
+            <Item14 Ref="47" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
+              <Expression>CRM_HELPDESK.ProductId</Expression>
+              <Key>d58ece958bf247b9936190610be5ebe6</Key>
+              <Label>ProductId</Label>
+            </Item14>
+          </Arguments>
+          <BackColor>Transparent</BackColor>
+          <ChartConditions isList="true" count="0" />
+          <ClientRectangle>600,320,600,280</ClientRectangle>
+          <CloseValues isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <CustomStyleName>Chart</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <EndValues isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>a7d7d687f7804eab957b4c0190af7900</Guid>
+          <HighValues isList="true" count="0" />
+          <Labels Ref="48" type="Stimulsoft.Dashboard.Components.Chart.StiChartLabels" isKey="true">
+            <Font>Arial,8</Font>
+            <ForeColor>Transparent</ForeColor>
+          </Labels>
+          <Legend Ref="49" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegend" isKey="true">
+            <Labels Ref="50" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendLabels" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,8</Font>
+            </Labels>
+            <Title Ref="51" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendTitle" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,12,Bold</Font>
+            </Title>
+          </Legend>
+          <LowValues isList="true" count="0" />
+          <ManuallyEnteredChartMeter Ref="52" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            <Key>f48bc4ab98d14fba9cd5a4cc1cd4c2b1</Key>
+          </ManuallyEnteredChartMeter>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Marker Ref="53" type="Stimulsoft.Dashboard.Components.Chart.StiChartMarker" isKey="true" />
+          <Name>Chart1</Name>
+          <NegativeSeriesColors />
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ParetoSeriesColors />
+          <RoundValues>True</RoundValues>
+          <SeriesColors />
+          <Style>Custom</Style>
+          <Title Ref="54" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>White</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Tickets by Status</Text>
+          </Title>
+          <TopN Ref="55" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <TrendLines isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <UserViewStates isList="true" count="0" />
+          <ValueFormat Ref="56" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits, Abbreviation</State>
+          </ValueFormat>
+          <Values isList="true" count="5">
+            <Item15 Ref="57" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(CRM_HELPDESK.In_progress)</Expression>
+              <Key>86dd563b6174405aa08ae188b8e43bc6</Key>
+              <Label>In_progress</Label>
+              <SeriesType>ClusteredBar</SeriesType>
+            </Item15>
+            <Item16 Ref="58" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(CRM_HELPDESK.InReview)</Expression>
+              <Key>1f9ab8dafd1d4365bc361890901107d1</Key>
+              <Label>In Review</Label>
+              <SeriesType>ClusteredBar</SeriesType>
+            </Item16>
+            <Item17 Ref="59" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(CRM_HELPDESK.Engaged)</Expression>
+              <Key>20e109ac6ba04365945244f902adc689</Key>
+              <Label>Engaged</Label>
+              <SeriesType>ClusteredBar</SeriesType>
+            </Item17>
+            <Item18 Ref="60" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(CRM_HELPDESK.DisEngaged)</Expression>
+              <Key>ea9c822579b548a08f22c844ec0d2fcf</Key>
+              <Label>DisEngaged</Label>
+              <SeriesType>ClusteredBar</SeriesType>
+            </Item18>
+            <Item19 Ref="61" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(CRM_HELPDESK.Resolved)</Expression>
+              <Key>ad04839f0dd34a9889a1038cea120119</Key>
+              <Label>Resolved</Label>
+              <SeriesType>ClusteredBar</SeriesType>
+            </Item19>
+          </Values>
+          <Weights isList="true" count="0" />
+        </Chart1>
+        <Indicator5 Ref="62" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>600,40,300,280</ClientRectangle>
+          <CustomStyleName>Indicator</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>135042aafdf6412d8e706642d05f304b</Guid>
+          <Icon>Check</Icon>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator5</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Series Ref="63" type="Stimulsoft.Dashboard.Components.Indicator.StiSeriesIndicatorMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>0289c29d7d894876a23e61221f0e225b</Key>
+            <Label>ProductId</Label>
+          </Series>
+          <Style>Custom</Style>
+          <Target Ref="64" type="Stimulsoft.Dashboard.Components.Indicator.StiTargetIndicatorMeter" isKey="true">
+            <Expression>Count(CRM_HELPDESK.SupportStatus)</Expression>
+            <Key>185c6d9d774b47a89a50593025a2b3e1</Key>
+            <Label>SupportStatus</Label>
+          </Target>
+          <TextFormat Ref="65" type="PercentageFormat" isKey="true">
+            <DecimalDigits>2</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <PositivePattern>1</PositivePattern>
+            <State>DecimalDigits, DecimalSeparator, PercentageSymbol, NegativeInRed</State>
+            <Symbol>%</Symbol>
+          </TextFormat>
+          <Title Ref="66" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>White</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>CSAT</Text>
+          </Title>
+          <TopN Ref="67" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="68" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Count(CRM_HELPDESK.SupportStatus)</Expression>
+            <Key>6feeaa0b60b349d486108b07ba2c5c1e</Key>
+            <Label>SupportStatus</Label>
+          </Value>
+        </Indicator5>
+        <Gauge2 Ref="69" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>300,40,300,280</ClientRectangle>
+          <CustomStyleName>Gauge</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>White</ForeColor>
+          <Guid>25b7d7d73005472fa18f1d39454e7c7f</Guid>
+          <Labels Ref="70" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeLabels" isKey="true" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Maximum>10</Maximum>
+          <MaximumDateTime>5/24/2024 3:07:16 AM</MaximumDateTime>
+          <Minimum>0</Minimum>
+          <MinimumDateTime>5/24/2023 3:07:16 AM</MinimumDateTime>
+          <Name>Gauge2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <RangeMode>Value</RangeMode>
+          <Ranges isList="true" count="3">
+            <Item22 Ref="71" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>141, 194, 99</Color>
+              <End>4</End>
+              <EndExpression>4</EndExpression>
+            </Item22>
+            <Item23 Ref="72" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>255, 221, 206</Color>
+              <End>7</End>
+              <EndExpression>7</EndExpression>
+              <Start>4</Start>
+              <StartExpression>4</StartExpression>
+            </Item23>
+            <Item24 Ref="73" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeRange" isKey="true">
+              <Color>159, 55, 85</Color>
+              <End>10</End>
+              <EndExpression>10</EndExpression>
+              <Start>7</Start>
+              <StartExpression>7</StartExpression>
+            </Item24>
+          </Ranges>
+          <RangeType>Color</RangeType>
+          <Series Ref="74" type="Stimulsoft.Dashboard.Components.Gauge.StiSeriesGaugeMeter" isKey="true">
+            <Expression>CRM_HELPDESK.SupportStatus</Expression>
+            <Key>e50823e7e3f4457aa209186930018a06</Key>
+            <Label>SupportStatus</Label>
+          </Series>
+          <Style>Custom</Style>
+          <Target Ref="75" type="Stimulsoft.Dashboard.Components.Gauge.StiTargetGaugeMeter" isKey="true">
+            <Expression>Sum(CRM_HELPDESK.SupportTimeSpentFixing)</Expression>
+            <Key>3d1b1f63d84c439684bc772e09da6455</Key>
+            <Label>SupportTimeSpentFixing</Label>
+          </Target>
+          <TargetSettings Ref="76" type="Stimulsoft.Dashboard.Components.Gauge.StiGaugeTarget" isKey="true" />
+          <Title Ref="77" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>White</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Total time spent </Text>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="78" type="Stimulsoft.Dashboard.Components.Gauge.StiValueGaugeMeter" isKey="true">
+            <Expression>Sum(CRM_HELPDESK.SupportTimeSpentFixing)</Expression>
+            <Key>733b4279e643406a854d892c53afdf65</Key>
+            <Label>SupportTimeSpentFixing</Label>
+          </Value>
+          <ValueFormat Ref="79" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits, Abbreviation</State>
+          </ValueFormat>
+        </Gauge2>
+        <ComboBox1 Ref="80" type="Stimulsoft.Dashboard.Components.ComboBox.StiComboBoxElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>900,40,300,40</ClientRectangle>
+          <CustomStyleName>ComboBox</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>ac11694b7e34427f88c780b5f902cf22</Guid>
+          <KeyMeter Ref="81" type="Stimulsoft.Dashboard.Components.ComboBox.StiKeyComboBoxMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>1976c962be1742b4853a9c0d680185c1</Key>
+            <Label>ProductId</Label>
+          </KeyMeter>
+          <Margin>3,3,3,3</Margin>
+          <Name>ComboBox1</Name>
+          <NameMeter Ref="82" type="Stimulsoft.Dashboard.Components.ComboBox.StiNameComboBoxMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>dc9a710171b844ceb833410f52045292</Key>
+            <Label>ProductId</Label>
+          </NameMeter>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SelectionMode>Multi</SelectionMode>
+          <ShowAllValue>True</ShowAllValue>
+          <Style>Custom</Style>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+        </ComboBox1>
+        <Indicator6 Ref="83" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,320,300,140</ClientRectangle>
+          <CustomStyleName>Indicator</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,17</Font>
+          <ForeColor>White</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>718f60f9ffa34e35948f71ef65937b55</Guid>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator6</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Series Ref="84" type="Stimulsoft.Dashboard.Components.Indicator.StiSeriesIndicatorMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>e59c4fe849af4b93b22c468292069bda</Key>
+            <Label>ProductId</Label>
+          </Series>
+          <Style>Custom</Style>
+          <Title Ref="85" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Not reviewed</Text>
+          </Title>
+          <TopN Ref="86" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="87" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(CRM_HELPDESK.NotReviewed)</Expression>
+            <Key>b01de932e82a4f3580c4389c713d84fe</Key>
+            <Label>Not Reviewed</Label>
+          </Value>
+        </Indicator6>
+        <Indicator7 Ref="88" type="Stimulsoft.Dashboard.Components.Indicator.StiIndicatorElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,40,300,140</ClientRectangle>
+          <CustomStyleName>Indicator</CustomStyleName>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,13</Font>
+          <ForeColor>Transparent</ForeColor>
+          <GlyphColor>Transparent</GlyphColor>
+          <Guid>cc32a4ec1f95440797ffd51e77643382</Guid>
+          <IconRangeMode>Percentage</IconRangeMode>
+          <IconRanges isList="true" count="0" />
+          <IconSet>Rating</IconSet>
+          <IndicatorConditions isList="true" count="0" />
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlBeSGJRemoJnBucWpSZWqwE4sXycsUCALmUbWY5AAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Name>Indicator7</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Series Ref="89" type="Stimulsoft.Dashboard.Components.Indicator.StiSeriesIndicatorMeter" isKey="true">
+            <Expression>CRM_HELPDESK.ProductId</Expression>
+            <Key>bb13cdbb001948e0a16bfe73f88d0416</Key>
+            <Label>ProductId</Label>
+          </Series>
+          <Style>Custom</Style>
+          <Title Ref="90" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Disengaged</Text>
+          </Title>
+          <TopN Ref="91" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <Value Ref="92" type="Stimulsoft.Dashboard.Components.Indicator.StiValueIndicatorMeter" isKey="true">
+            <Expression>Sum(CRM_HELPDESK.DisEngaged)</Expression>
+            <Key>2e4b62796b154f95aebec5f8d57a7ac1</Key>
+            <Label>DisEngaged</Label>
+          </Value>
+        </Indicator7>
+      </Components>
+      <DashboardWatermark Ref="93" type="Stimulsoft.Base.Drawing.StiAdvancedWatermark" isKey="true">
+        <TextColor>Gray</TextColor>
+        <TextFont>Arial,36</TextFont>
+        <WeaveMajorColor>119, 119, 119, 119</WeaveMajorColor>
+        <WeaveMinorColor>85, 119, 119, 119</WeaveMinorColor>
+      </DashboardWatermark>
+      <Expressions isList="true" count="0" />
+      <Guid>297187c4919e4c078250ec57352d9799</Guid>
+      <Name>Dashboard1</Name>
+      <Report isRef="0" />
+      <Style>DarkTurquoise</Style>
+    </Dashboard1>
+  </Pages>
+  <PreviewSettings>25108991</PreviewSettings>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>DashboardSupportKPI</ReportAlias>
+  <ReportAuthor>Stimulsoft</ReportAuthor>
+  <ReportChanged>6/14/2023 12:27:58 AM</ReportChanged>
+  <ReportCreated>7/15/2019 3:17:58 PM</ReportCreated>
+  <ReportFile>C:\Users\HP\Downloads\dashboard\Samples-Dashboards-ASP.NET-6.0-MVC-master\Web Demo\Dashboards/DashboardSupportKPI.mrt</ReportFile>
+  <ReportGuid>7131dc618a1343109d90291800144674</ReportGuid>
+  <ReportName>DashboardSupportKPI</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2023.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class DashboardSupportKPI : Stimulsoft.Report.StiReport
+    {
+        public DashboardSupportKPI()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="4">
+    <ComboBox Ref="94" type="Stimulsoft.Report.StiDialogStyle" isKey="true">
+      <BackColor>42, 42, 42</BackColor>
+      <Conditions isList="true" count="0" />
+      <Font>Arial,8</Font>
+      <ForeColor>White</ForeColor>
+      <GlyphColor>251, 255, 255</GlyphColor>
+      <HotBackColor>170, 211, 194</HotBackColor>
+      <HotForeColor>251, 255, 255</HotForeColor>
+      <HotGlyphColor>251, 255, 255</HotGlyphColor>
+      <HotSelectedBackColor>170, 211, 194</HotSelectedBackColor>
+      <HotSelectedForeColor>251, 255, 255</HotSelectedForeColor>
+      <HotSelectedGlyphColor>251, 255, 255</HotSelectedGlyphColor>
+      <Name>ComboBox</Name>
+      <SelectedBackColor>117, 176, 153</SelectedBackColor>
+      <SelectedForeColor>238, 238, 238</SelectedForeColor>
+      <SelectedGlyphColor>251, 255, 255</SelectedGlyphColor>
+      <SeparatorColor>174, 210, 229</SeparatorColor>
+    </ComboBox>
+    <Indicator Ref="95" type="Stimulsoft.Report.StiIndicatorStyle" isKey="true">
+      <BackColor>42, 42, 42</BackColor>
+      <Conditions isList="true" count="0" />
+      <ForeColor>White</ForeColor>
+      <GlyphColor>143, 197, 100</GlyphColor>
+      <HotBackColor>66, 86, 106</HotBackColor>
+      <Name>Indicator</Name>
+      <NegativeColor>Red</NegativeColor>
+      <PositiveColor>Green</PositiveColor>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+    </Indicator>
+    <Gauge Ref="96" type="Stimulsoft.Report.StiGaugeStyle" isKey="true">
+      <BorderColor>Transparent</BorderColor>
+      <Brush>[42:42:42]</Brush>
+      <Conditions isList="true" count="0" />
+      <ForeColor>221, 221, 221</ForeColor>
+      <LinearBarBorderBrush>EmptyBrush</LinearBarBorderBrush>
+      <LinearBarBrush>[11:172:69]</LinearBarBrush>
+      <LinearBarEmptyBorderBrush>EmptyBrush</LinearBarEmptyBorderBrush>
+      <LinearBarEmptyBrush>EmptyBrush</LinearBarEmptyBrush>
+      <LinearScaleBrush>[112:173:71]</LinearScaleBrush>
+      <MarkerBrush>[236:51:77]</MarkerBrush>
+      <Name>Gauge</Name>
+      <NeedleBorderBrush>EmptyBrush</NeedleBorderBrush>
+      <NeedleBorderWidth>1</NeedleBorderWidth>
+      <NeedleBrush>[236:51:77]</NeedleBrush>
+      <NeedleCapBorderBrush>[236:51:77]</NeedleCapBorderBrush>
+      <NeedleCapBrush>[255:255:255]</NeedleCapBrush>
+      <RadialBarBorderBrush>EmptyBrush</RadialBarBorderBrush>
+      <RadialBarBrush>[76:149:119]</RadialBarBrush>
+      <RadialBarEmptyBorderBrush>EmptyBrush</RadialBarEmptyBorderBrush>
+      <RadialBarEmptyBrush>[59:77:95]</RadialBarEmptyBrush>
+      <TargetColor>White</TargetColor>
+      <TickLabelMajorFont>Arial,10</TickLabelMajorFont>
+      <TickLabelMajorTextBrush>[255:255:255]</TickLabelMajorTextBrush>
+      <TickLabelMinorFont>Arial,9</TickLabelMinorFont>
+      <TickLabelMinorTextBrush>[255:255:255]</TickLabelMinorTextBrush>
+      <TickMarkMajorBorder>EmptyBrush</TickMarkMajorBorder>
+      <TickMarkMajorBorderWidth>1</TickMarkMajorBorderWidth>
+      <TickMarkMajorBrush>EmptyBrush</TickMarkMajorBrush>
+      <TickMarkMinorBorder>EmptyBrush</TickMarkMinorBorder>
+      <TickMarkMinorBorderWidth>1</TickMarkMinorBorderWidth>
+      <TickMarkMinorBrush>EmptyBrush</TickMarkMinorBrush>
+    </Gauge>
+    <Chart Ref="97" type="Stimulsoft.Report.StiChartStyle" isKey="true">
+      <AxisLabelsColor>White</AxisLabelsColor>
+      <AxisLineColor>White</AxisLineColor>
+      <AxisTitleColor>140, 140, 140</AxisTitleColor>
+      <BasicStyleColor>White</BasicStyleColor>
+      <Brush>[42:42:42]</Brush>
+      <ChartAreaBorderColor>Transparent</ChartAreaBorderColor>
+      <ChartAreaBrush>[42:42:42]</ChartAreaBrush>
+      <Conditions isList="true" count="0" />
+      <GridLinesHorColor>White</GridLinesHorColor>
+      <GridLinesVertColor>50, 105, 105, 105</GridLinesVertColor>
+      <InterlacingHorBrush>[10:155:155:155]</InterlacingHorBrush>
+      <InterlacingVertBrush>[10:155:155:155]</InterlacingVertBrush>
+      <LegendBorderColor>Transparent</LegendBorderColor>
+      <LegendBrush>Transparent</LegendBrush>
+      <LegendLabelsColor>White</LegendLabelsColor>
+      <LegendTitleColor>White</LegendTitleColor>
+      <Name>Chart</Name>
+      <SeriesBorderColor>Transparent</SeriesBorderColor>
+      <SeriesLabelsBorderColor>Transparent</SeriesLabelsBorderColor>
+      <SeriesLabelsBrush>Transparent</SeriesLabelsBrush>
+      <SeriesLabelsColor>White</SeriesLabelsColor>
+      <SeriesLabelsLineColor>White</SeriesLabelsLineColor>
+      <StyleColors>[142:197:100], [249:179:111], [200:101:130], [88:82:87], [161:174:148], [237:125:49]</StyleColors>
+      <ToolTipBrush>White</ToolTipBrush>
+      <ToolTipTextBrush>Black</ToolTipTextBrush>
+      <TrendLineColor>DimGray</TrendLineColor>
+    </Chart>
+  </Styles>
+</StiSerializer>

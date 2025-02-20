@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { LoginRoutingModule } from './login-routing.module';
-import { LoginComponent } from './login.component';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-
-@NgModule({
-    declarations: [LoginComponent],
-    imports: [AppSharedModule, AccountSharedModule, LoginRoutingModule],
-})
-export class LoginModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:505efb425937aa7d6f77e3131f4222b615bee53b83e14d041a48e62f2d88e218
+size 450

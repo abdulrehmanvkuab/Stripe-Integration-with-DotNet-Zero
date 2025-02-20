@@ -1,12 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { HostDashboardRoutingModule } from './host-dashboard-routing.module';
-import { HostDashboardComponent } from './host-dashboard.component';
-import { CustomizableDashboardModule } from '@app/shared/common/customizable-dashboard/customizable-dashboard.module';
-
-@NgModule({
-    declarations: [HostDashboardComponent],
-    imports: [AppSharedModule, AdminSharedModule, HostDashboardRoutingModule, CustomizableDashboardModule],
-})
-export class HostDashboardModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7787ad58354b0dadb004e739916765f0441c38e209348db821c91db4dab0fac
+size 652

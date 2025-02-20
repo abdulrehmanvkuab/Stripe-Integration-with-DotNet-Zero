@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { MaintenanceRoutingModule } from './maintenance-routing.module';
-import { MaintenanceComponent } from './maintenance.component';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-
-@NgModule({
-    declarations: [MaintenanceComponent],
-    imports: [AppSharedModule, AdminSharedModule, MaintenanceRoutingModule],
-})
-export class MaintenanceModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dffb80f7bc1c93dbe47044f221f13aa92dbfbaf78c27016fb62040825e26e965
+size 488

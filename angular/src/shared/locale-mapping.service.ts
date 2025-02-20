@@ -1,17 +1,3 @@
-import { AppConsts } from '@shared/AppConsts';
-import { filter as _filter } from 'lodash-es';
-
-export class LocaleMappingService {
-    map(mappingSource: string, locale: string): string {
-        if (!AppConsts.localeMappings && !AppConsts.localeMappings[mappingSource]) {
-            return locale;
-        }
-
-        const localeMappings = _filter(AppConsts.localeMappings[mappingSource], { from: locale });
-        if (localeMappings && localeMappings.length) {
-            return localeMappings[0]['to'];
-        }
-
-        return locale;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fb262460247d813694844d09f8f148d38598f86b44147075e86b5cd87b4ddc30
+size 551

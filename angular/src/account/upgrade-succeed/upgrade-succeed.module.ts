@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { UpgradeSucceedRoutingModule } from './upgrade-succeed-routing.module';
-import { UpgradeSucceedComponent } from './upgrade-succeed.component';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-
-@NgModule({
-    declarations: [UpgradeSucceedComponent],
-    imports: [AppSharedModule, AccountSharedModule, UpgradeSucceedRoutingModule],
-})
-export class UpgradeSucceedModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:36e82fc1ff0528c4be005449338a429fabd05e62c8a6a9a329257eb083dac79b
+size 515

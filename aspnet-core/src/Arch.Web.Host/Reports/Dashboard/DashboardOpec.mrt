@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Culture>en-US</Culture>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <manufacturingg Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>manufacturingg</Alias>
+        <ConnectionStringEncrypted>usj7Ak1Ka6ToWs2EYRh3G8N40Y3JBfqZ8Un9peAopKeQYM+JxUp76flRhIBkGCU/w3ZTy9VbW83jIqHcY3QiF5BYwytGSyLd7Vw5jOq4bj/VatUJxk6b2exa/YTkTOhnw3jPyUsYS91qS+1AYRhl+8JWaUhNTXOBbF1AvWJEYQ==</ConnectionStringEncrypted>
+        <Name>manufacturingg</Name>
+      </manufacturingg>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <ManufacturingGgg Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>ManufacturingGgg</Alias>
+        <Columns isList="true" count="18">
+          <value>workordercompletedDate,System.DateTime</value>
+          <value>AssemblyID,System.String</value>
+          <value>January,System.Decimal</value>
+          <value>February,System.Decimal</value>
+          <value>March,System.Decimal</value>
+          <value>April,System.Decimal</value>
+          <value>May,System.Decimal</value>
+          <value>June,System.Decimal</value>
+          <value>July,System.Decimal</value>
+          <value>August,System.Decimal</value>
+          <value>September,System.Decimal</value>
+          <value>October,System.Decimal</value>
+          <value>November,System.Decimal</value>
+          <value>December,System.Decimal</value>
+          <value>Production_Month,System.String</value>
+          <value>Production_Year,System.Int32</value>
+          <value>CurrencyExchangeRate,System.Decimal</value>
+          <value>ProductionUnit,System.Decimal</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>64f0305680614989aaa46a5e211d0400</Key>
+        <Name>ManufacturingGgg</Name>
+        <NameInSource>manufacturingg</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from ManufacturingGgg</SqlCommand>
+      </ManufacturingGgg>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>3402e74f18734606b3705573d5900c1d</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Dashboard1 Ref="4" type="Stimulsoft.Dashboard.Components.StiDashboard" isKey="true">
+      <Alias>Opec</Alias>
+      <BackColor>Transparent</BackColor>
+      <Components isList="true" count="5">
+        <Text1 Ref="5" type="Stimulsoft.Dashboard.Components.Text.StiTextElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,0,1200,40</ClientRectangle>
+          <Expressions isList="true" count="0" />
+          <ForeColor>Transparent</ForeColor>
+          <Guid>ab3be7ef0aca40afa567681a3607f2c1</Guid>
+          <Margin>3,3,3,3</Margin>
+          <Name>Text1</Name>
+          <Padding>0,0,0,0</Padding>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <Text>&lt;font face="Arial" size="36"&gt;&lt;text-align="Center"&gt;Montly production&lt;/text-align&gt;&lt;/font&gt;</Text>
+          <Title Ref="6" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Text</Text>
+            <Visible>False</Visible>
+          </Title>
+        </Text1>
+        <TableOpec Ref="7" type="Stimulsoft.Dashboard.Components.Table.StiTableElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>0,40,1200,220</ClientRectangle>
+          <Columns isList="true" count="13">
+            <Item6 Ref="8" type="Stimulsoft.Dashboard.Components.Table.StiDimensionColumn" isKey="true">
+              <Expression>ManufacturingGgg.AssemblyID</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <Key>00f98cfd0ccc4906b8f5cc9a247da37d</Key>
+              <Label>AssemblyID</Label>
+              <Size Ref="9" type="Stimulsoft.Report.Dashboard.StiTableColumnSize" isKey="true" />
+            </Item6>
+            <Item7 Ref="10" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.January)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>d8d21c5846ec4832aa14ea993b4d9bf9</Key>
+              <Label>January</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat Ref="11" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+              </TextFormat>
+            </Item7>
+            <Item8 Ref="12" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.February)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>5c926ccf038d47f4b560ace9ee5fed18</Key>
+              <Label>February</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item8>
+            <Item9 Ref="13" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.March)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>11209d5ed4af467ca1d3a9ed664a3f07</Key>
+              <Label>March</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item9>
+            <Item10 Ref="14" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.April)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>ac20d5f44a2644ef9f2f975f2a87dbfa</Key>
+              <Label>April</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item10>
+            <Item11 Ref="15" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.May)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>a941b4b5175d4b078e7bbba311400f93</Key>
+              <Label>May</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item11>
+            <Item12 Ref="16" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.June)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>5a6ba4c489c04727bc9b6e5511c45777</Key>
+              <Label>June</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item12>
+            <Item13 Ref="17" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.July)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>95a13ae6524d4533979083d73f8da73e</Key>
+              <Label>July</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item13>
+            <Item14 Ref="18" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.August)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>9c287d5d727e4ef9849929858e14b000</Key>
+              <Label>August</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item14>
+            <Item15 Ref="19" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.September)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>fe154e0f4e30456d8099dc5bf71252d2</Key>
+              <Label>September</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item15>
+            <Item16 Ref="20" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.October)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>799ee799a43b405f9eec095122838aff</Key>
+              <Label>October</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item16>
+            <Item17 Ref="21" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.November)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>041b3dca7a384b778405424f6d1f01f9</Key>
+              <Label>November</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item17>
+            <Item18 Ref="22" type="Stimulsoft.Dashboard.Components.Table.StiMeasureColumn" isKey="true">
+              <Expression>Sum(ManufacturingGgg.December)</Expression>
+              <ForeColor>Transparent</ForeColor>
+              <HorAlignment>Right</HorAlignment>
+              <Key>8bac42e0e8364e42bd8106125f9f5f06</Key>
+              <Label>December</Label>
+              <ShowTotalSummary>True</ShowTotalSummary>
+              <TextFormat isRef="11" />
+            </Item18>
+          </Columns>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <FooterFont>Arial,10</FooterFont>
+          <FooterForeColor>Transparent</FooterForeColor>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>b9cf629747974c1f8b7e97e24e2b370b</Guid>
+          <HeaderFont>Arial,10</HeaderFont>
+          <HeaderForeColor>Transparent</HeaderForeColor>
+          <Margin>3,3,3,3</Margin>
+          <Name>TableOpec</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SizeMode>Fit</SizeMode>
+          <TableConditions isList="true" count="0" />
+          <Title Ref="23" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Opec</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+        </TableOpec>
+        <Chart1 Ref="24" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <Area Ref="25" type="Stimulsoft.Dashboard.Components.Chart.StiChartArea" isKey="true">
+            <InterlacingHor Ref="26" type="Stimulsoft.Dashboard.Components.Chart.StiHorChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingHor>
+            <InterlacingVert Ref="27" type="Stimulsoft.Dashboard.Components.Chart.StiVertChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingVert>
+            <XAxis Ref="28" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxis" isKey="true">
+              <Labels Ref="29" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="30" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="31" type="Stimulsoft.Dashboard.Components.Chart.StiXChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </XAxis>
+            <YAxis Ref="32" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxis" isKey="true">
+              <Labels Ref="33" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisLabels" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,8</Font>
+              </Labels>
+              <Range Ref="34" type="Stimulsoft.Dashboard.Components.Chart.StiChartAxisRange" isKey="true" />
+              <Title Ref="35" type="Stimulsoft.Dashboard.Components.Chart.StiYChartAxisTitle" isKey="true">
+                <Color>Transparent</Color>
+                <Font>Arial,12,Bold</Font>
+                <Visible>False</Visible>
+              </Title>
+            </YAxis>
+          </Area>
+          <Arguments isList="true" count="1">
+            <Item20 Ref="36" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
+              <Expression>ManufacturingGgg.Production_Month</Expression>
+              <Key>98bbbd33359245fd908e9e35a09439da</Key>
+              <Label>Production_Month</Label>
+            </Item20>
+          </Arguments>
+          <BackColor>Transparent</BackColor>
+          <ChartConditions isList="true" count="0" />
+          <ClientRectangle>700,260,500,340</ClientRectangle>
+          <CloseValues isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
+          <EndValues isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>7c98abba766a456b991e5ac7a7738f46</Guid>
+          <HighValues isList="true" count="0" />
+          <Labels Ref="37" type="Stimulsoft.Dashboard.Components.Chart.StiChartLabels" isKey="true">
+            <Font>Arial,8</Font>
+            <ForeColor>Transparent</ForeColor>
+          </Labels>
+          <Legend Ref="38" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegend" isKey="true">
+            <Labels Ref="39" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendLabels" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,8</Font>
+            </Labels>
+            <Title Ref="40" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendTitle" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,12,Bold</Font>
+            </Title>
+          </Legend>
+          <LowValues isList="true" count="0" />
+          <ManuallyEnteredChartMeter Ref="41" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            <Key>612af58dd7cc4c68be45e3107c50077b</Key>
+          </ManuallyEnteredChartMeter>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Marker Ref="42" type="Stimulsoft.Dashboard.Components.Chart.StiChartMarker" isKey="true" />
+          <Name>Chart1</Name>
+          <NegativeSeriesColors />
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ParetoSeriesColors />
+          <RoundValues>True</RoundValues>
+          <Series Ref="43" type="Stimulsoft.Dashboard.Components.Chart.StiSeriesChartMeter" isKey="true">
+            <Expression>ManufacturingGgg.AssemblyID</Expression>
+            <Key>896cc3e5d6a84888b3e9085a154d9e3c</Key>
+            <Label>AssemblyID</Label>
+          </Series>
+          <SeriesColors />
+          <SortBy Ref="44" type="Stimulsoft.Dashboard.Components.Chart.StiSortByChartMeter" isKey="true">
+            <Expression>ManufacturingGgg.workordercompletedDate</Expression>
+            <Key>83fcde36112949868661a94044d96046</Key>
+            <Label>workordercompletedDate</Label>
+          </SortBy>
+          <Title Ref="45" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,15.75,Regular,Point,False,204</Font>
+            <ForeColor>Transparent</ForeColor>
+            <HorAlignment>Center</HorAlignment>
+            <SizeMode>Fit</SizeMode>
+            <Text>PRODUCTION PER MONTH</Text>
+          </Title>
+          <TopN Ref="46" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <TrendLines isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="1">
+            <Item21 Ref="47" type="Stimulsoft.Data.Engine.StiDataSortRule" isKey="true">
+              <Key>83fcde36112949868661a94044d96046</Key>
+            </Item21>
+          </UserSorts>
+          <UserViewStates isList="true" count="0" />
+          <ValueFormat Ref="48" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits</State>
+          </ValueFormat>
+          <Values isList="true" count="1">
+            <Item22 Ref="49" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.ProductionUnit)</Expression>
+              <Key>7333a4e239d441f9a98989420ceef109</Key>
+              <Label>ProductionUnit</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item22>
+          </Values>
+          <Weights isList="true" count="0" />
+        </Chart1>
+        <Chart2 Ref="50" type="Stimulsoft.Dashboard.Components.Chart.StiChartElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <Area Ref="51" type="Stimulsoft.Dashboard.Components.Chart.StiChartArea" isKey="true">
+            <InterlacingHor Ref="52" type="Stimulsoft.Dashboard.Components.Chart.StiHorChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingHor>
+            <InterlacingVert Ref="53" type="Stimulsoft.Dashboard.Components.Chart.StiVertChartInterlacing" isKey="true">
+              <Color>Transparent</Color>
+            </InterlacingVert>
+          </Area>
+          <Arguments isList="true" count="1">
+            <Item24 Ref="54" type="Stimulsoft.Dashboard.Components.Chart.StiArgumentChartMeter" isKey="true">
+              <Expression>ManufacturingGgg.AssemblyID</Expression>
+              <Key>ccbe6c72fdcc4ddbb0155fada65313fc</Key>
+              <Label>AssemblyID</Label>
+            </Item24>
+          </Arguments>
+          <BackColor>Transparent</BackColor>
+          <ChartConditions isList="true" count="0" />
+          <ClientRectangle>20,260,500,380</ClientRectangle>
+          <CloseValues isList="true" count="0" />
+          <ConstantLines isList="true" count="0" />
+          <DataFilters isList="true" count="0" />
+          <EndValues isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>9ea743300eb34daf810ed9580d5eebef</Guid>
+          <HighValues isList="true" count="0" />
+          <Labels Ref="55" type="Stimulsoft.Dashboard.Components.Chart.StiChartLabels" isKey="true">
+            <Font>Arial,8</Font>
+            <ForeColor>Transparent</ForeColor>
+          </Labels>
+          <Legend Ref="56" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegend" isKey="true">
+            <Labels Ref="57" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendLabels" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,8</Font>
+            </Labels>
+            <Title Ref="58" type="Stimulsoft.Dashboard.Components.Chart.StiChartLegendTitle" isKey="true">
+              <Color>Transparent</Color>
+              <Font>Arial,12,Bold</Font>
+            </Title>
+          </Legend>
+          <LowValues isList="true" count="0" />
+          <ManuallyEnteredChartMeter Ref="59" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+            <Key>4eb022e1cfba4710b6a45092be331598</Key>
+          </ManuallyEnteredChartMeter>
+          <ManuallyEnteredData>H4sIAAAAAAAEAIvm5VJQiAYRCgpKYYk5palKOlCea14KqoBzTn5xKqqQT345qoBHZnoGqohjUXppbmpeCVwgPBWoBsENTi3KTC1WAvFiebliAcwjTseRAAAAWklQ</ManuallyEnteredData>
+          <Margin>3,3,3,3</Margin>
+          <Marker Ref="60" type="Stimulsoft.Dashboard.Components.Chart.StiChartMarker" isKey="true" />
+          <Name>Chart2</Name>
+          <NegativeSeriesColors />
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <ParetoSeriesColors />
+          <RoundValues>True</RoundValues>
+          <SeriesColors />
+          <Title Ref="61" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>Chart</Text>
+          </Title>
+          <TopN Ref="62" type="Stimulsoft.Data.Engine.StiDataTopN" isKey="true" />
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <TrendLines isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+          <UserSorts isList="true" count="0" />
+          <UserViewStates isList="true" count="0" />
+          <ValueFormat Ref="63" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <State>DecimalDigits, Abbreviation</State>
+          </ValueFormat>
+          <Values isList="true" count="12">
+            <Item25 Ref="64" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.January)</Expression>
+              <Key>8711954e8d3d4531ab3f1703192e7c2c</Key>
+              <Label>January</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item25>
+            <Item26 Ref="65" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.February)</Expression>
+              <Key>44671a0c557f4210869eeb2be90472c7</Key>
+              <Label>February</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item26>
+            <Item27 Ref="66" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.March)</Expression>
+              <Key>357f63870fe74adfa232cb131f9174f5</Key>
+              <Label>March</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item27>
+            <Item28 Ref="67" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.April)</Expression>
+              <Key>b128dd80f4e74bb39079cc20e1848667</Key>
+              <Label>April</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item28>
+            <Item29 Ref="68" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.May)</Expression>
+              <Key>4a96ee506d054dc0a78b518a43820700</Key>
+              <Label>May</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item29>
+            <Item30 Ref="69" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.June)</Expression>
+              <Key>a6541162744c4cc4b5fff31b77368fe8</Key>
+              <Label>June</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item30>
+            <Item31 Ref="70" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.July)</Expression>
+              <Key>6c736350e14a47328cbe9cf21e5ab987</Key>
+              <Label>July</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item31>
+            <Item32 Ref="71" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.August)</Expression>
+              <Key>c1066d2527684b3aa011524275808164</Key>
+              <Label>August</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item32>
+            <Item33 Ref="72" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.September)</Expression>
+              <Key>90dfc238a0694f5b8b8c85b51ab4d022</Key>
+              <Label>September</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item33>
+            <Item34 Ref="73" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.October)</Expression>
+              <Key>65fc90e0d03b477f9c7f099ffd7283da</Key>
+              <Label>October</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item34>
+            <Item35 Ref="74" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.November)</Expression>
+              <Key>83826917fb734fe8aba0f71253821629</Key>
+              <Label>November</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item35>
+            <Item36 Ref="75" type="Stimulsoft.Dashboard.Components.Chart.StiValueChartMeter" isKey="true">
+              <Expression>Sum(ManufacturingGgg.December)</Expression>
+              <Key>fcfb3e834e02438e9e1502b3bd8092bb</Key>
+              <Label>December</Label>
+              <SeriesType>StackedColumn</SeriesType>
+            </Item36>
+          </Values>
+          <Weights isList="true" count="0" />
+        </Chart2>
+        <ListBox1 Ref="76" type="Stimulsoft.Dashboard.Components.ListBox.StiListBoxElement" isKey="true">
+          <AltClientRectangle>0,0,0,0</AltClientRectangle>
+          <BackColor>Transparent</BackColor>
+          <ClientRectangle>520,260,200,340</ClientRectangle>
+          <DataFilters isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <ForeColor>Transparent</ForeColor>
+          <Guid>9105a6d5723d4fa08941df3420ef899b</Guid>
+          <KeyMeter Ref="77" type="Stimulsoft.Dashboard.Components.ListBox.StiKeyListBoxMeter" isKey="true">
+            <Expression>ManufacturingGgg.Production_Year</Expression>
+            <Key>57c38120807747c5a7a9fd6d2a2cb8c5</Key>
+            <Label>Production_Year</Label>
+          </KeyMeter>
+          <Margin>3,3,3,3</Margin>
+          <Name>ListBox1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SelectionMode>Multi</SelectionMode>
+          <Title Ref="78" type="Stimulsoft.Dashboard.Components.StiTitle" isKey="true">
+            <BackColor>Transparent</BackColor>
+            <Font>Arial,11</Font>
+            <ForeColor>Transparent</ForeColor>
+            <SizeMode>Fit</SizeMode>
+            <Text>List Box</Text>
+            <Visible>False</Visible>
+          </Title>
+          <TransformActions isList="true" count="0" />
+          <TransformFilters isList="true" count="0" />
+          <TransformSorts isList="true" count="0" />
+          <UserFilters isList="true" count="0" />
+        </ListBox1>
+      </Components>
+      <DashboardWatermark Ref="79" type="Stimulsoft.Base.Drawing.StiAdvancedWatermark" isKey="true">
+        <TextColor>Gray</TextColor>
+        <TextFont>Arial,36</TextFont>
+        <WeaveMajorColor>119, 119, 119, 119</WeaveMajorColor>
+        <WeaveMinorColor>85, 119, 119, 119</WeaveMinorColor>
+      </DashboardWatermark>
+      <Expressions isList="true" count="0" />
+      <Guid>5f20f570bcf2462292771eb4273fa7df</Guid>
+      <Name>Dashboard1</Name>
+      <Report isRef="0" />
+    </Dashboard1>
+  </Pages>
+  <PreviewSettings>268435455</PreviewSettings>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>DashboardOpec</ReportAlias>
+  <ReportChanged>6/8/2023 4:34:00 PM</ReportChanged>
+  <ReportCreated>3/22/2016 10:27:51 AM</ReportCreated>
+  <ReportFile>C:\Users\HP\Downloads\dashboard\Samples-Dashboards-ASP.NET-6.0-MVC-master\Web Demo\Dashboards/DashboardOpec.mrt</ReportFile>
+  <ReportGuid>9be84879dff6446f8beec87993e1d6f5</ReportGuid>
+  <ReportName>DashboardOpec</ReportName>
+  <ReportUnit>HundredthsOfInch</ReportUnit>
+  <ReportVersion>2023.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Perfomance : Stimulsoft.Report.StiReport
+    {
+        public Perfomance()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

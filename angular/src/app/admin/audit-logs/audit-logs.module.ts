@@ -1,12 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { AuditLogsRoutingModule } from './audit-logs-routing.module';
-import { AuditLogsComponent } from './audit-logs.component';
-import { AuditLogDetailModalComponent } from './audit-log-detail-modal.component';
-
-@NgModule({
-    declarations: [AuditLogsComponent, AuditLogDetailModalComponent],
-    imports: [AppSharedModule, AdminSharedModule, AuditLogsRoutingModule],
-})
-export class AuditLogsModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:01313daa085bd6ecc4ca5460231905318c904d23fd8b28f7d63d07e64bf51e8e
+size 589

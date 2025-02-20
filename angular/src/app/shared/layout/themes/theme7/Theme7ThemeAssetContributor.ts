@@ -1,29 +1,3 @@
-import { IThemeAssetContributor } from '../ThemeAssetContributor';
-import { AppConsts } from '@shared/AppConsts';
-import { NameValuePair } from '@shared/utils/name-value-pair';
-
-export class Theme7ThemeAssetContributor implements IThemeAssetContributor {
-    public getAssetUrls(): string[] {
-        return [AppConsts.appBaseUrl + '/assets/fonts/fonts-roboto.min.css'];
-    }
-
-    public getMenuWrapperStyle(): string {
-        return '';
-    }
-
-    public getSubheaderStyle(): string {
-        return 'text-dark fw-bold my-1 me-5';
-    }
-
-    public getFooterStyle(): string {
-        return 'footer py-4 d-flex flex-lg-column';
-    }
-
-    getBodyAttributes(): NameValuePair[] {
-        return [];
-    }
-
-    getAppModuleBodyClass(): string {
-        return 'header-fixed header-tablet-and-mobile-fixed aside-fixed aside-secondary-enabled';
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:539ca0278a4f3fbe80edd9885222dac2f782ba66d5d17ca55c05cc45fac2faa5
+size 851

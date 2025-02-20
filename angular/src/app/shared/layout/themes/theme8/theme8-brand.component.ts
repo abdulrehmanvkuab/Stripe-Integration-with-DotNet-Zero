@@ -1,19 +1,3 @@
-import { Injector, Component, ViewEncapsulation, Inject } from '@angular/core';
-
-import { AppConsts } from '@shared/AppConsts';
-import { AppComponentBase } from '@shared/common/app-component-base';
-
-import { DOCUMENT } from '@angular/common';
-
-@Component({
-    templateUrl: './theme8-brand.component.html',
-    selector: 'theme8-brand',
-    encapsulation: ViewEncapsulation.None,
-})
-export class Theme8BrandComponent extends AppComponentBase {
-    remoteServiceBaseUrl: string = AppConsts.remoteServiceBaseUrl;
-
-    constructor(injector: Injector, @Inject(DOCUMENT) private document: Document) {
-        super(injector);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf7e4be4392fa839b80fbc158447c038390a8f4dbc3e3a7c96fd361bf752653e
+size 629

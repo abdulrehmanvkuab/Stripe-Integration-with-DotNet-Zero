@@ -1,12 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { WebhookSubscriptionModule } from './webhook-subscription.module';
-import { WebhookSubscriptionDetailRoutingModule } from './webhook-subscription-detail-routing.module';
-import { WebhookSubscriptionDetailComponent } from './webhook-subscription-detail.component';
-
-@NgModule({
-    declarations: [WebhookSubscriptionDetailComponent],
-    imports: [AppSharedModule, AdminSharedModule, WebhookSubscriptionDetailRoutingModule, WebhookSubscriptionModule],
-})
-export class WebhookSubscriptionDetailModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:88bd1c9b5ce6a310d8cf76d05d7efac298dc5146d8e499517032014b9e9d6aa3
+size 692

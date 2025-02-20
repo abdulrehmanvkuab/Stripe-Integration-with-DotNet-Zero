@@ -1,11 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { ValidateTwoFactorCodeRoutingModule } from './validate-two-factor-code-routing.module';
-import { AccountSharedModule } from '@account/shared/account-shared.module';
-import { ValidateTwoFactorCodeComponent } from './validate-two-factor-code.component';
-
-@NgModule({
-    declarations: [ValidateTwoFactorCodeComponent],
-    imports: [AppSharedModule, AccountSharedModule, ValidateTwoFactorCodeRoutingModule],
-})
-export class ValidateTwoFactorCodeModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a6f6b0fefcdeb34b4f548ae6b33c8133863f64f32add8436f6ec15090100971
+size 568

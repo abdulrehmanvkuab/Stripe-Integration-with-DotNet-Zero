@@ -1,34 +1,3 @@
-import { AppComponentBase } from '@shared/common/app-component-base';
-import { OnDestroy, Injector, Component } from '@angular/core';
-import { timer, Subscription } from 'rxjs';
-
-@Component({ template: '' })
-export class WidgetComponentBaseComponent extends AppComponentBase implements OnDestroy {
-    delay = 300;
-    timer: Subscription;
-
-    constructor(injector: Injector) {
-        super(injector);
-    }
-
-    /**
-     * Run methods delayed. If runDelay called multiple time before its delay, only run last called.
-     * @param method Method to call
-     */
-    runDelayed(method: () => void) {
-        if (this.timer && !this.timer.closed) {
-            this.timer.unsubscribe();
-        }
-
-        this.timer = timer(this.delay).subscribe(() => {
-            method();
-        });
-    }
-
-    ngOnDestroy(): void {
-        if (this.timer && !this.timer.closed) {
-            this.timer.unsubscribe();
-        }
-        super.ngOnDestroy();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b7f6b0318bf60fb4db3282cbf200e77ce7032e139605d9559a34b3581a60f2b
+size 955

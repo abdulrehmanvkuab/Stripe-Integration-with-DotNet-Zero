@@ -1,22 +1,3 @@
-import { Injector, Component, ViewEncapsulation, Inject, Input } from '@angular/core';
-import { AppConsts } from '@shared/AppConsts';
-import { AppComponentBase } from '@shared/common/app-component-base';
-import { DOCUMENT } from '@angular/common';
-
-@Component({
-    templateUrl: './theme9-brand.component.html',
-    selector: 'theme9-brand',
-    encapsulation: ViewEncapsulation.None,
-})
-export class Theme9BrandComponent extends AppComponentBase {
-
-    @Input() imageClass = 'h-40px';
-
-    skin = this.appSession.theme.baseSettings.layout.darkMode ? 'dark' : 'light';
-    defaultLogo = AppConsts.appBaseUrl + '/assets/common/images/app-logo-on-' + this.skin + '-sm.svg';
-    remoteServiceBaseUrl: string = AppConsts.remoteServiceBaseUrl;
-
-    constructor(injector: Injector, @Inject(DOCUMENT) private document: Document) {
-        super(injector);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1fc789effdf6fa038b226ffd7dae8eb3b18fd068a0b85ffba3821e280bf47e80
+size 857

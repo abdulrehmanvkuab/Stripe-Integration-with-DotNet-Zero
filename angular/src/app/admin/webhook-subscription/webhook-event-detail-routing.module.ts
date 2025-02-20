@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { WebhookEventDetailComponent } from './webhook-event-detail.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: WebhookEventDetailComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class WebhookEventDetailRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2cda4a269a5af943ecd5e21f293f75458f229e0325be9db4401cba87ad611a16
+size 452

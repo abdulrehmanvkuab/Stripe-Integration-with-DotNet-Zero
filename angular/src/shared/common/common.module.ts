@@ -1,18 +1,3 @@
-import { CommonModule } from '@angular/common';
-import { ModuleWithProviders, NgModule } from '@angular/core';
-import { AppUrlService } from './nav/app-url.service';
-import { AppUiCustomizationService } from './ui/app-ui-customization.service';
-import { AppSessionService } from './session/app-session.service';
-import { CookieConsentService } from './session/cookie-consent.service';
-
-@NgModule({
-    imports: [CommonModule],
-})
-export class ArchCommonModule {
-    static forRoot(): ModuleWithProviders<CommonModule> {
-        return {
-            ngModule: CommonModule,
-            providers: [AppUiCustomizationService, CookieConsentService, AppSessionService, AppUrlService],
-        };
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:358fbbd2aabf6d03b9227069114bd649e62e76dfa651773e7444c41f16564ee4
+size 700

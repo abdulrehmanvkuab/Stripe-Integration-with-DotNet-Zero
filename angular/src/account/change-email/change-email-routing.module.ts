@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ChangeEmailComponent } from './change-email.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: ChangeEmailComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class ChangeEmailRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8248b53a57535863c4708a8300da70a5762ee3c4ab38a9a0a932d8a64f38827
+size 423

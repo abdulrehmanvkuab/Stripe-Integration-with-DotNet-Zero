@@ -1,20 +1,3 @@
-import { Injector, Component, ViewEncapsulation, Inject } from '@angular/core';
-
-import { AppConsts } from '@shared/AppConsts';
-import { AppComponentBase } from '@shared/common/app-component-base';
-
-import { DOCUMENT } from '@angular/common';
-
-@Component({
-    templateUrl: './theme2-brand.component.html',
-    selector: 'theme2-brand',
-    encapsulation: ViewEncapsulation.None,
-})
-export class Theme2BrandComponent extends AppComponentBase {
-    remoteServiceBaseUrl: string = AppConsts.remoteServiceBaseUrl;
-    skin = this.currentTheme.baseSettings.layout.darkMode ? 'dark' : 'light';
-
-    constructor(injector: Injector, @Inject(DOCUMENT) private document: Document) {
-        super(injector);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0da1a83c6b25457062b6b687b38d4d9fa346e5a4308c8df1c2329d8e061e9b6a
+size 707

@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { EditionsComponent } from './editions.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: EditionsComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class EditionsRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1a9fa7fb15fd7e7f956a6ae066ccdc79c27b48e25bae21fc95b1cdafff75ffd
+size 410

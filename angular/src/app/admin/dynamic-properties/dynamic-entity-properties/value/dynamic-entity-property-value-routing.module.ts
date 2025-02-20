@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ManagerComponent } from './manager.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: ManagerComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class DynamicEntityPropertyValueRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:067452ac3101f9966df281b922cc6673db51b67db27f09b4b78b82151c1c09df
+size 425

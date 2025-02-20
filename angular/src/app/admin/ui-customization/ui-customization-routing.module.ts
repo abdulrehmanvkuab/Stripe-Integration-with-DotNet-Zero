@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { UiCustomizationComponent } from './ui-customization.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: UiCustomizationComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class UICustomizationRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:42b92312a060b21da905ae796ab7bb8005bfc856f538da40688a1998ccf347ce
+size 439

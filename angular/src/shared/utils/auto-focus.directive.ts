@@ -1,12 +1,3 @@
-import { AfterViewInit, Directive, ElementRef } from '@angular/core';
-
-@Directive({
-    selector: '[autoFocus]',
-})
-export class AutoFocusDirective implements AfterViewInit {
-    constructor(private _element: ElementRef) {}
-
-    ngAfterViewInit(): void {
-        this._element.nativeElement.focus();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f27118bb16f888af1a446adbfcb5e571173ceb810a44465f745d75aabc10058c
+size 308

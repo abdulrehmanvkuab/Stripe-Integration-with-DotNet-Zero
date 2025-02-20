@@ -1,17 +1,3 @@
-﻿import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { EmailActivationComponent } from './email-activation.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: EmailActivationComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class EmailActivationRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:84cc3a6bbd227a32c2865179f69e4d117916ca4958fe73276455e44d87beae20
+size 442

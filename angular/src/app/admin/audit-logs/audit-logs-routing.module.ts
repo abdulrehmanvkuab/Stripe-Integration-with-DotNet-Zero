@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { AuditLogsComponent } from './audit-logs.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: AuditLogsComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class AuditLogsRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ed2c9930f572ce0b6f68b2661e6a852c330a48d28c3055d0771fb24289243b25
+size 415

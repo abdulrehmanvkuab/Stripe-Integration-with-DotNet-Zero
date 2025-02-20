@@ -1,12 +1,3 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { ChangeProfilePictureModalComponent } from './change-profile-picture-modal.component';
-
-@NgModule({
-    imports: [CommonModule, AppSharedModule],
-    declarations: [ChangeProfilePictureModalComponent],
-    exports: [ChangeProfilePictureModalComponent],
-})
-export class ChangeProfilePictureModalModule {}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b99f530e27e52c73de52575fa15ae46cee5b00935c2c208e6d69cac572775f71
+size 468

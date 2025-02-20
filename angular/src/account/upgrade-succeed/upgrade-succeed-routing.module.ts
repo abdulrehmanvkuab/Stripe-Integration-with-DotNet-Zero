@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { UpgradeSucceedComponent } from './upgrade-succeed.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: UpgradeSucceedComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class UpgradeSucceedRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2fa68a25b38d0b3d4bd0fb43d285dd7a54370056403282f157105382dbca7e7a
+size 435

@@ -1,12 +1,3 @@
-import { NgModule } from '@angular/core';
-import { AdminSharedModule } from '@app/admin/shared/admin-shared.module';
-import { AppSharedModule } from '@app/shared/app-shared.module';
-import { SubscriptionManagementRoutingModule } from './subscription-management-routing.module';
-import { SubscriptionManagementComponent } from './subscription-management.component';
-import { ShowDetailModalComponent } from './show-detail-modal.component';
-
-@NgModule({
-    declarations: [SubscriptionManagementComponent, ShowDetailModalComponent],
-    imports: [AppSharedModule, AdminSharedModule, SubscriptionManagementRoutingModule],
-})
-export class SubscriptionManagementModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4d25ae6b9eaab8b734ec55611eb6b37a817fd4c9cbe16c0c0a3e293400684fe
+size 667

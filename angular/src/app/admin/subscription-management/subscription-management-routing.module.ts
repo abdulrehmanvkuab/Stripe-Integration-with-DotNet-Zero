@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { SubscriptionManagementComponent } from './subscription-management.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        component: SubscriptionManagementComponent,
-        pathMatch: 'full',
-    },
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-})
-export class SubscriptionManagementRoutingModule {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:41e73e3a7ada28cd1919a46968484bef0fe073a9d9b6f4d98e42d0f2447ce73e
+size 467

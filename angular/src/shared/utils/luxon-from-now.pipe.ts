@@ -1,13 +1,3 @@
-import { Pipe, PipeTransform } from '@angular/core';
-import { DateTime } from 'luxon';
-
-@Pipe({ name: 'luxonFromNow' })
-export class LuxonFromNowPipe implements PipeTransform {
-    transform(value: DateTime) {
-        if (!value) {
-            return '';
-        }
-
-        return value.toRelative();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a00bc6bf9a20833b369c1badee53bac336888b295dd55ca1a1d41c3362ed5fb9
+size 309
